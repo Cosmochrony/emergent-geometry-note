@@ -2,7 +2,6 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{mathtools}
 \usepackage{hyperref}
@@ -11,7 +10,6 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{enumitem}
-\usepackage{xcolor}
 
 \geometry{margin=2.5cm}
 
@@ -24,12 +22,26 @@
 
 \theoremstyle{definition}
 \newtheorem{remark}{Remark}
-\newtheorem{definition}{Definition}
 
-% TODO: declare paper-specific macros here.
+\newcommand{\Heis}{\mathrm{Heis}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\su}{\mathfrak{su}}
+\newcommand{\heis}{\mathfrak{heis}}
+\newcommand{\BI}{\mathrm{BI}}
+\newcommand{\BFS}{\mathrm{BFS}}
+\newcommand{\Leff}{L_{\mathrm{eff}}}
+\newcommand{\Lpi}{L_\Pi}
+\newcommand{\geff}{g^{\mu\nu}}
+\newcommand{\Atau}{A_\tau}
+\newcommand{\AH}{A_H}
+\newcommand{\AZ}{A_Z}
+\newcommand{\Dhom}{D_{\mathrm{hom}}}
+\newcommand{\Sym}{\mathrm{Sym}}
+\newcommand{\ImH}{\operatorname{Im}\mathbb{H}}
+\renewcommand{\Im}{\operatorname{Im}}
 
 \title{The Emergent Geometry Sub-Programme\\[0.4em]
-\large Presentation Note}
+\large Presentation Note 2}
 
 \author{J\'{e}r\^{o}me Beau\\[0.3em]
 \small Independent Researcher\\
@@ -42,13 +54,35 @@
   \maketitle
 
   \begin{abstract}
-    % TODO: write the abstract. The Zenodo publication tool extracts the
-    % title, abstract and keywords directly from this file.
+    The emergent geometry sub-programme of the Cosmochrony corpus addresses a single
+    central question: how does the admissible Weil--Heisenberg fibre give rise to an effective
+    four-dimensional Lorentzian geometry?
+    Starting from the admissibility filter $\Pi_q$ acting on the Weil representation
+    $V_\rho$ of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, the sub-programme closes the following chain:
+    \[
+      \Pi_q
+      \;\Longrightarrow\;
+      V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})
+      \;\Longrightarrow\;
+      \Heis_3(\mathbb{R})
+      \;\Longrightarrow\;
+      \Leff
+      \;\Longrightarrow\;
+      \geff
+      \;\Longrightarrow\;
+      \geff = 2\eta^{\mu\nu}.
+    \]
+    This note maps eleven constituent papers (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2)
+    across five internal phases, records the status of every result, and identifies the
+    two remaining open items: bridge existence at finite $q$ and the open Q5a Mosco
+    tightness hypotheses on the full function space.
   \end{abstract}
 
   \medskip
   \noindent\textbf{Keywords.}
-  % TODO: semicolon-separated keywords.
+  emergent spacetime; Heisenberg group; Carnot geometry; Mosco convergence; Lorentzian
+  signature; effective metric; sub-Riemannian geometry; Casimir rigidity; non-injective
+  projection; admissibility; presentation note.
 
   \newpage
   \tableofcontents
@@ -57,24 +91,533 @@
 
   \section{Motivation and Central Question}
     \label{sec:motivation}
-    % TODO
+
+    The emergent geometry sub-programme answers the following question.
+
+    \medskip
+    \noindent\textit{Central question.}
+    The admissibility filter $\Pi_q$ of the Cosmochrony framework acts on the Weil
+    representation $V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ of
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, selecting admissible modes according to the
+    Born--Infeld bounded-flux constraint.
+    \textit{What effective geometry is selected in the large-$q$ limit of this structure,
+      and what determines the numerical values of its metric coefficients?}
+
+    \medskip
+    The practical importance of this question is that the entire gravitational, gauge, and
+    fermionic content of Branch~III depends on the identification of an effective spacetime.
+    Without a derived metric, the dynamical outputs of the Gravity paper~\cite{Beau2026h},
+    the gauge structure of Q6a~\cite{Beau2026q6a}, and the spinorial structure of
+    Q14~\cite{Beau2026q14} would each require an independently postulated background.
+    The emergent geometry sub-programme removes this postulate: spacetime is a
+    forced consequence of admissibility, not an input.
+
+    \medskip
+    This note is concerned exclusively with the reconstruction of the effective metric
+    $\geff = 2\eta^{\mu\nu}$.
+    The dynamical content — why the effective metric satisfies the Einstein equations — is
+    the subject of the spectral gravity sub-programme and is not claimed here.
 
   \section{Position in the Cosmochrony Programme}
     \label{sec:position}
-    % TODO
+
+    The emergent geometry sub-programme occupies the interface between Branch~I (axiomatic
+    primitive) and Branch~III (physical observables).
+    It takes the algebraic output of Branch~I — the Weil representation of
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and the Born--Infeld admissibility constraint — and
+    produces the effective Lorentzian metric used throughout Branch~III.
+
+    \medskip
+    Its relation to the spectral admissibility sub-programme (Presentation Note~1) is the
+    following.
+    Note~1 establishes that the admissible sector is the spin-$\tfrac{1}{2}$ sector
+    $V_\rho \cong \mathbb{C}^2$ and that $\Sigma_c(n_3) = 3$ with $\Im\mathbb{H} \cong \su(2)$.
+    The emergent geometry sub-programme takes these facts as inputs and asks: what metric
+    structure do they support?
+
+    \begin{remark}[Vocabulary note]
+Throughout this note, the term \emph{admissibility constraint} replaces the earlier
+``relaxation'' vocabulary of the preliminary Cosmochrony formulation.
+The substrate $\chi$ is static: no substrate dynamics or relaxation mechanism is
+postulated at the foundational level.
+Observable evolution is an induced ordering of admissible projections, not a dynamics of
+$\chi$ itself.
+    \end{remark}
+
+    \begin{remark}[Scope: metric reconstruction only]
+This sub-programme closes the chain $\Pi_q \to \geff = 2\eta^{\mu\nu}$.
+It does not address the dynamics of $\geff$: the question of why the effective metric
+satisfies the Einstein equations is handled by the spectral gravity sub-programme, which
+takes the metric established here as its starting point.
+    \end{remark}
+
+  \section{Logical Chain of the Sub-Programme}
+    \label{sec:chain}
+
+    The sub-programme is organised around the following derivation chain.
+
+    \begin{equation}
+      \label{eq:chain}
+      \underbrace{\Pi_q}_{\text{admissibility filter}}
+      \;\Longrightarrow\;
+      \underbrace{\Lpi = -A\partial_x^2}_{\substack{\text{1D shadow} \\ \text{(Mosco, Q5a)}}}
+      \;\Longrightarrow\;
+      \underbrace{\Leff \text{ on } \mathbb{R}_\tau \times \Heis_3(\mathbb{R})}_{\substack{\text{4D effective operator} \\ \text{(Carnot, Q5b)}}}
+      \;\Longrightarrow\;
+      \underbrace{\geff \propto A_{\mu\nu}}_{\substack{\text{metric extraction} \\ \text{(Q5b + Q9)}}}
+      \;\Longrightarrow\;
+      \underbrace{\geff = 2\eta^{\mu\nu}}_{\substack{\text{metric closure} \\ \text{(Q8--Q11 + U1)}}}.
+    \end{equation}
+
+    The chain has five conceptually distinct stages, each resolved by a distinct group of papers.
+
+    \begin{enumerate}
+      \item \textit{Discrete-to-continuum.}
+      Q5a establishes the Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$
+      on $\mathrm{Cay}(G_q, S_q)$ to a one-dimensional shadow operator
+      $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
+      Q5a-O2 closes the two remaining open hypotheses of Q5a ([H-E1] and Conjecture~[C])
+      via spectral atomicity.
+      H2 closes hypothesis~[H2].
+
+      \item \textit{Dimensional promotion.}
+      Q5b promotes the one-dimensional $\Lpi$ to a four-dimensional effective operator
+      $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ via the Bass--Guivarc'h
+      homogeneous dimension $\Dhom = 4$ and the Carnot convergence of BFS shells.
+
+      \item \textit{Metric extraction.}
+      Q5b Theorem~5.2, made unconditional by Q9's proof of [H-lift], extracts the effective
+      co-metric tensor $\geff \propto A_{\mu\nu}$ from the principal symbol of $\Leff$.
+      Q5b Theorem~6.1 derives Lorentzian signature $(-, +, +, +)$ from the Born--Infeld
+      admissibility constraint.
+
+      \item \textit{Coefficient determination.}
+      Q7 identifies the effective projection space $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ as
+      the unique irreducible three-dimensional $\su(2)$-module and establishes the bridge
+      rigidity $\phi: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$.
+      Q8 derives $\AZ = C_{\su(2)} = 2$ via Casimir rigidity on the central direction.
+      Q10 establishes $\AH \to 2$ under spectral universality~[U].
+      U1 proves [U] with rate $\varepsilon(q) = O(q^{-1/2})$.
+
+      \item \textit{Metric closure.}
+      Q11 closes the sole remaining open coefficient $\Atau = 2$ via temporal Casimir
+      rigidity, giving $\geff = 2\eta^{\mu\nu}$.
+      W1 closes [H-w].
+    \end{enumerate}
 
   \section{Constituent Papers}
     \label{sec:papers}
-    % TODO: map the geometric emergence sub-programme papers
-    % (Q5a--Q11, U1, W1, H2).
+
+    \subsection{Continuum limit and one-dimensional shadow: Q5a and Q5a-O2}
+      \label{sec:q5a}
+
+      \textbf{Q5a}~\cite{Beau2026q5a} establishes, conditionally on hypotheses [H1], [H-w],
+      [H-E1], and Conjecture~[C], three convergences.
+      (T1)~A Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
+      $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at
+      finite $q$.
+      (T2)~Convergence of rescaled Weil generators to the metaplectic generators of
+      $\Heis_3(\mathbb{R})$.
+      (T3)~Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to the
+      second-order operator $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$, $A > 0$.
+
+      The key conceptual content of Q5a is that the continuum limit is not an additional
+      assumption: it is forced by the coercivity and compactness properties of the admissible
+      forms.
+      Uniform energy bounds prevent spectral mass from escaping to high frequencies;
+      the Mosco limit is the unique operator compatible with spectral stability.
+
+      $\Lpi$ is a one-dimensional operator.
+      Q5a states explicitly that ``the operator $\Lpi$ is the one-dimensional operator-theoretic
+      shadow of the homogeneous four-dimensional structure of $\Heis_3(\mathbb{R})$.
+      The identification of $\Lpi$ with a four-dimensional effective geometry is the subject of
+      Q5b.''
+
+      The O-series link is structural: Hypothesis~[H-E1] (uniform spectral gap) is equivalent to the
+      stabilisation of $\delta_{\mathrm{pair}}$ across primes, supported by the O12--O25 campaign.
+      Hypothesis~[H-w] (admissibility weight convergence $a_q(s) \to A > 0$) is proved in
+      W1~\cite{Beau2026w1}.
+
+      \textbf{Q5a-O2}~\cite{Beau2026q5ao2} resolves the two remaining open hypotheses of Q5a.
+      It proves that the admissible sector $\mathrm{ran}(\Pi_q)$ is spectrally atomic:
+      it is spanned by three pure Fourier modes per conjugate pair, with macroscopic frequencies
+      $\xi_c^{(q)}/q \to \omega_c \neq 0$.
+      From this structure, coercivity at the optimal diffusive scale follows without any Nash or
+      Rellich inequality, and Mosco compactness follows from Bolzano--Weierstrass in $\mathbb{C}^2$.
+      Hypotheses [H-E1] and [C] become unconditional theorems on the admissible sector.
+
+    \subsection{Carnot geometry and Lorentzian signature: Q5b}
+      \label{sec:q5b}
+
+      \textbf{Q5b}~\cite{Beau2026q5b} delivers three results that together promote the
+      one-dimensional shadow $\Lpi$ to a four-dimensional effective geometry.
+
+      \textit{Carnot convergence} (Theorem~3.2; structural).
+      The BFS shell stratification $\{S_n\}$ of $G_q = \Heis_3(\mathbb{Z}/q\mathbb{Z})$
+      converges, in the pre-saturation regime $n \ll q$, to the Carnot--Carath\'{e}odory
+      sphere foliation of $\Heis_3(\mathbb{R})$.
+      The homogeneous dimension $\Dhom = 4$ (Bass--Guivarc'h) gives the limiting geometry
+      the spectral and volume-growth properties of a four-dimensional space.
+      This result is structural: it follows from Pansu's asymptotic cone theorem and requires
+      no new hypothesis.
+
+      \textit{Metric extraction} (Theorem~5.2; unconditional via Q9~\cite{Beau2026q9}).
+      Under [H-lift] — proved in Q9 as a theorem rather than a hypothesis — $\Lpi$ is the image,
+      under the Schr\"{o}dinger representation $\pi_1$, of the kinetic sector of the
+      sub-Riemannian Laplacian $\Delta_H = \tilde{X}^2 + \tilde{Y}^2$ on $\Heis_3(\mathbb{R})$,
+      restricted to the admissible sector.
+      The effective co-metric $\geff \propto A_{\mu\nu}$ is extracted from the principal symbol
+      of the resulting effective operator $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$.
+
+      \textit{Lorentzian signature} (Theorem~6.1; conditional on Theorem~5.2).
+      The Born--Infeld admissibility constraint forces signature $(-, +, +, +)$ by exclusion:
+      Riemannian signature is excluded by the finite-capacity bound of A4; ultra-hyperbolic
+      signature fails to admit a globally well-posed initial value problem; degenerate
+      signature is excluded by sub-principal completion; parabolic signature implies a
+      characteristic direction incompatible with monotonic projective ordering.
+
+      After normalising the maximal admissible propagation speed to $c = 1$, the effective
+      metric is fixed to $\geff = \mathrm{diag}(-1, +1, +1, +1)$ in the homogeneous isotropic
+      regime.
+
+    \subsection{Effective spacetime output: Q6b}
+      \label{sec:q6b}
+
+      \textbf{Q6b}~\cite{Beau2026q6b} is the integrative output of the sub-programme.
+      Its role is not to re-derive the geometric convergence theorems of Q5a--Q5b, but to assemble
+      the chain into the macroscopic effective-spacetime statement:
+      \[
+        \Pi_q \;\longrightarrow\; \Leff \;\longrightarrow\; \geff \;\longrightarrow\; G_{\mu\nu}.
+      \]
+
+      Three results are obtained.
+      (i)~The Schwarzschild metric as the unique stationary, spherically symmetric exterior
+      solution compatible with the admissibility flow, obtained from flux conservation within the
+      effective geometry.
+      (ii)~A structural interpretation of the Schwarzschild horizon as a degeneracy of the
+      principal symbol of $\Leff$, not a singularity of the underlying admissible structure.
+      (iii)~The identification of the Einstein equations as consistency conditions of the emergent
+      geometry, via the spectral entropy functional of the Gravity paper.
+
+      Q6b closes the chain $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ under the Q5a--Q5b
+      hypotheses.
+      With [H-lift] proved in Q9, the results of Q6b are unconditional with respect to [H-lift].
+      The remaining conditionality stems from the Q5a Mosco hypotheses [H1], [H-w], [H-E1],
+      and~[C]; of these, [H-w] is proved in W1, and [H-E1] and [C] are closed in Q5a-O2.
+
+      \begin{remark}[Status of Q6b]
+Q6b is listed as published in the programme.
+Its status as \emph{integrative output} means that it assembles rather than proves: it
+inherits the metric from Q5b and passes the Einstein equations to the Gravity paper.
+It should not be cited as the primary source for either the metric or the Einstein
+equations; those primary sources are Q5b and the Gravity paper respectively.
+      \end{remark}
+
+    \subsection{Spatial, vertical, horizontal, and temporal coefficients: Q7--Q11}
+      \label{sec:q7q11}
+
+      Papers Q7--Q11 determine the four numerical entries of the effective metric by distinct
+      representation-theoretic arguments, all converging to the same value $A = 2$.
+
+      \textbf{Q7}~\cite{Beau2026q7} establishes three structural results.
+      First, $\su(2) \not\cong \heis_3(\mathbb{R})$ as Lie algebras, so the bridge
+      $\phi: H_{\mathrm{eff}} \to W_{\mathrm{sp}}$ operates at the representation level.
+      Second, the effective projection space $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ carries
+      the unique irreducible three-dimensional $\su(2)$-module (from O29).
+      The three spatial dimensions are the representation-theoretic image of $\Im\mathbb{H}
+  \cong \su(2)$, confirming the causal direction: $\Sigma_c(n_3) = 3 \Rightarrow
+  \dim \Im\mathbb{H} = 3 \Rightarrow$ three spatial directions.
+      Third, the bridge $\phi$ is unique up to positive scalar (Rigidity Lemma, Q7~Lemma~4.3),
+      so the metric coefficients are uniquely determined.
+      The no-cross-terms condition $k_X k_Z = k_Y k_Z = 0$ is proved analytically
+      (Proposition~6.1).
+
+      \textbf{Q9}~\cite{Beau2026q9} proves hypothesis~[H-lift] as a theorem by the method of
+      generator suppression: the modulation generator is suppressed at rate $O(q^{-1/2})$ on the
+      admissible sector, and coercivity of the limit form forces $A_H > 0$ independently of
+      bridge existence.
+      This makes Q5b Theorems~5.2 and~6.1 unconditional with respect to [H-lift].
+
+      \textbf{Q8}~\cite{BeauQ8} establishes $\AZ = C_{\su(2)} = 2$ for the central (vertical)
+      direction via Casimir rigidity.
+      The Heisenberg commutator $[\tilde{X}, \tilde{Y}] = \tilde{Z}$ has a unique algebraic
+      source; under the equivariant bridge $\phi$, its coefficient is constrained to be
+      proportional to the unique $\su(2)$-invariant quadratic form on $\Sym^2(V_\rho)$, namely
+      the Casimir $C_{\su(2)} = 2 \cdot \mathrm{Id}$.
+      The normalisation is fixed with no free scalar.
+      This closes Q5b open problem O2.
+
+      \textbf{Q10}~\cite{Beau2026q10} proves $\AH \to 2$ as $q \to \infty$ under the O-series
+      spectral universality hypothesis~[U].
+      The argument runs: character-independence of the admissibility weights forces
+      $\su(2)$-isotropy of the effective quadratic form on $H_{\mathrm{eff}} = \Sym^2(V_\rho)$;
+      the unique $\su(2)$-invariant quadratic form on this spin-1 module has eigenvalue 2
+      (Casimir).
+      Numerical confirmation from the O25 campaign gives $|A_H(q) - 2| \approx 0.264 q^{-0.44}$
+      for $q \in \{61, 101, 151\}$.
+
+      \textbf{U1}~\cite{Beau2026u1} proves hypothesis~[U] with rate $\varepsilon(q) = O(q^{-1/2})$
+      from the Weil-generator Lipschitz bound and the BFS--Carnot--Carath\'{e}odory convergence.
+      This closes [U] as a theorem rather than a structural assumption.
+
+      \textbf{Q11}~\cite{Beau2026q11} closes the sole remaining open coefficient $\Atau$.
+      The cascade increment operator $T$ internalises no new irreducible representation; by
+      Schur's lemma, the $\tau$-sector carries the trivial $\SU(2)$-representation and the
+      temporal quadratic form must be $\SU(2)$-invariant.
+      Since $T$ is the same cascade that fixes the spatial bridge normalisation (Q8), no
+      independent normalisation arises: $\Atau = C_{\su(2)} = 2$.
+      This gives the isotropic Lorentzian co-metric:
+      \begin{equation}
+        \label{eq:metric}
+        \geff = 2\eta^{\mu\nu},
+        \qquad \eta = \mathrm{diag}(-1, +1, +1, +1).
+      \end{equation}
+      The conformal factor of 2 is not a choice of units; it is the eigenvalue of the $\su(2)$-Casimir
+      on the spin-1 module $\Sym^2(V_\rho)$, governing all four metric components uniformly.
+      After absorbing $\Omega^2 = 2$ into the normalisation of the propagation speed, the
+      effective metric is exactly Minkowski.
+
+    \subsection{Closure papers: W1 and H2}
+      \label{sec:closure}
+
+      \textbf{W1}~\cite{Beau2026w1} proves hypothesis~[H-w] (convergence of the admissibility
+      weights $a_q(s) \to A > 0$) as a structural consequence of the fibre-invariance of
+      admissible observables, made quantitative by U1.
+      After W1, the open Q5a hypotheses reduce to [H1], [H-E1], and~[C].
+
+      \textbf{H2}~\cite{Beau2026h2} proves hypothesis~[H2] (strong convergence of the rescaled
+      Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative
+      Poisson aliasing lemma and a discrete Sobolev identity.
+      Together with Q5a-O2, H2 completes the closure of all Q5a hypotheses on the admissible
+      sector.
+
+      \begin{table}[ht]
+        \centering
+        \caption{Summary of constituent papers by internal phase.
+        Status: P = proved; S = structural; C = conditional on Q5a hypotheses.}
+        \label{tab:papers}
+        \renewcommand{\arraystretch}{1.2}
+        \begin{tabular}{@{}lllll@{}}
+          \toprule
+          Phase & Papers & Central output & Status \\
+          \midrule
+          Discrete-to-continuum & Q5a, Q5a-O2, H2 & $\Lpi = -A\partial_x^2$; [H-E1],[C],[H2] closed & P/S \\
+          Dimensional promotion & Q5b & $\Dhom = 4$; Carnot convergence & S \\
+          Metric extraction & Q5b + Q9 & $\geff \propto A_{\mu\nu}$; signature $(-, +, +, +)$ & P \\
+          Coefficient determination & Q7, Q8, Q10, U1 & $\AZ = \AH = 2$ & P/S \\
+          Metric closure & Q11, W1 & $\Atau = 2$; $\geff = 2\eta^{\mu\nu}$ & S/P \\
+          Integrative output & Q6b & $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ & C \\
+          \bottomrule
+        \end{tabular}
+      \end{table}
+
+  \section{Inputs from Upstream Results}
+    \label{sec:inputs}
+
+    The emergent geometry sub-programme takes the following inputs from Branch~I and from
+    Presentation Note~1 (spectral admissibility).
+
+    \begin{enumerate}
+      \item \textbf{Weil representation on $L^2(\mathbb{Z}/q\mathbb{Z})$.}
+      The identification of the admissible fibre as $V_\rho$ is a theorem of Foundation~M
+      and HeisenbergStructure~\cite{Beau2026HeisenbergStructure,Beau2026m}.
+
+      \item \textbf{Born--Infeld admissibility constraint.}
+      The bounded-flux condition $A_n \leq c_\chi/\sqrt{\lambda_n}$ is the Q5a starting point.
+      Its origin in the BI action is established in Branch~I.
+
+      \item \textbf{Spin-$\tfrac{1}{2}$ sector and $\Sigma_c(n_3) = 3$.}
+      From Presentation Note~1 (O23, O27, O29): the admissible sector is $V_\rho \cong \mathbb{C}^2$;
+      the threshold dimension is $\Sigma_c(n_3) = 3$ by quaternionic minimality;
+      $\Im\mathbb{H} \cong \su(2)$ is the three-dimensional spatial algebra.
+      These are the inputs to Q7's identification of $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ as
+      the effective projection space.
+
+      \item \textbf{O-series universality data.}
+      The stabilisation of $\delta_{\mathrm{pair}}(q)$ across the O12--O25 campaign provides
+      the numerical support for [H-E1] and for the spectral universality [U] required by Q10.
+    \end{enumerate}
+
+  \section{Outputs to Downstream Branches}
+    \label{sec:outputs}
+
+    Table~\ref{tab:outputs} lists the principal outputs of the sub-programme and their
+    downstream consumers.
+
+    \begin{table}[ht]
+      \centering
+      \caption{Principal outputs and downstream consumers.}
+      \label{tab:outputs}
+      \renewcommand{\arraystretch}{1.3}
+      \begin{tabular}{@{}p{5.5cm}p{4.5cm}l@{}}
+        \toprule
+        Output & Consumer & Status \\
+        \midrule
+        $\geff = 2\eta^{\mu\nu}$ & Gravity, Q12, Q13 & S (Q11) \\
+        Lorentzian signature $(-, +, +, +)$ & All Branch~III & P (Q5b + Q9) \\
+        $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ & Q6b, Gravity, Q12 & C \\
+        $H_{\mathrm{eff}} = \Sym^2(V_\rho) \cong \mathbb{C}^3$ & Q7, Q8, Q14 & P \\
+        Three spatial directions from $\Im\mathbb{H}$ & Q7, gauge notes & P \\
+        Schwarzschild exterior metric & Q6b & C \\
+        Einstein equations as consistency conditions & Q6b, Gravity & C \\
+        $\ell_{\mathrm{sp}}$ (spectral length scale) & Gravity~\cite{Beau2026h} & S \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
 
   \section{Status of Results}
     \label{sec:status}
-    % TODO
+
+    \subsection{Proved results}
+      \label{sec:proved}
+
+      \begin{enumerate}
+        \item \textit{$\Dhom = 4$} (Q5b Theorem~2.1): the Bass--Guivarc'h theorem for
+        $\Heis_3(\mathbb{R})$; the homogeneous dimension is 4.
+
+        \item \textit{Carnot convergence} (Q5b Theorem~3.2, following Pansu): the BFS shell
+        stratification of $G_q$ converges to the Carnot--Carath\'{e}odory sphere foliation of
+        $\Heis_3(\mathbb{R})$ in the pre-saturation regime.
+
+        \item \textit{$[\text{H-lift}]$} (Q9 Theorem~1.2): the admissibility filter concentrates
+        on the kinetic sector of $d\pi_1(\Delta_H)$ at rate $O(q^{-1/2})$, making $\Lpi$ the
+        kinetic shadow of $\Delta_H$ without independent hypothesis.
+
+        \item \textit{Metric extraction} (Q5b Theorem~5.2, unconditional via Q9): the effective
+        co-metric $\geff \propto A_{\mu\nu}$ is extracted from the principal symbol of $\Leff$
+        under the Q5a hypotheses.
+
+        \item \textit{Lorentzian signature} (Q5b Theorem~6.1): signature $(-, +, +, +)$ is forced by
+        the Born--Infeld admissibility constraint via exclusion of all other signature classes.
+
+        \item \textit{Bridge rigidity} (Q7 Lemma~4.3): the bridge
+        $\phi: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$ is unique up to positive scalar.
+
+        \item \textit{No-cross-terms} (Q7 Proposition~6.1): the cross terms $k_X k_Z = k_Y k_Z = 0$
+        are proved analytically from $[\mathcal{F}_c, L_{\mathrm{Weil}}] = 0$.
+
+        \item \textit{$\AZ = 2$} (Q8 Theorem~1.1): Casimir rigidity of the central direction;
+        $\AZ = C_{\su(2)}|_{\Sym^2(V_\rho)} = 2 \cdot \mathrm{Id}$ with no free normalisation scalar.
+
+        \item \textit{Spectral universality [U]} (U1): $\varepsilon(q) = O(q^{-1/2})$; proved from
+        the Weil-generator Lipschitz bound.
+
+        \item \textit{$\AH \to 2$} (Q10 Theorem~1.1): character-independence forces
+        $\su(2)$-isotropy of the effective form; the Casimir gives value 2 in the limit.
+
+        \item \textit{$[\text{H-w}]$} (W1): admissibility weight convergence $a_q(s) \to A > 0$
+        proved as a structural consequence of fibre-invariance, quantified by U1.
+
+        \item \textit{$[\text{H2}]$} (H2): strong convergence of rescaled Weil generators via
+        Poisson aliasing lemma and discrete Sobolev identity.
+
+        \item \textit{$[\text{H-E1}]$ and $[\text{C}]$ on the admissible sector} (Q5a-O2): proved
+        via spectral atomicity of $\mathrm{ran}(\Pi_q)$.
+
+        \item \textit{$\Atau = 2$} (Q11 Theorem~1.1): temporal Casimir rigidity; cascade
+        internalization lemma, Schur rigidity, and Q8 normalisation close $\Atau$.
+
+        \item \textit{Metric closure $\geff = 2\eta^{\mu\nu}$} (Q11 Corollary~6.1): combination of
+        $\Atau = 2$ (Q11), $\AH = 2$ (Q10), $\AZ = 2$ (Q8), and Q5b Theorem~6.1.
+      \end{enumerate}
+
+    \subsection{Structural results}
+      \label{sec:structural}
+
+      \begin{enumerate}
+        \item \textit{$H_{\mathrm{eff}} = \Sym^2(V_\rho)$} (Q7 Proposition~4.1, from O29):
+        the effective projection space is the unique irreducible three-dimensional $\su(2)$-module.
+
+        \item \textit{Three spatial dimensions from $\Im\mathbb{H}$} (Q7, O23): the three spatial
+        directions are the image of $\Im\mathbb{H} \cong \su(2)$; three-dimensionality is not
+        postulated.
+
+        \item \textit{Schwarzschild exterior metric} (Q6b): flux conservation within the effective
+        geometry forces the Schwarzschild metric as the unique stationary spherically symmetric
+        exterior solution; conditional on Q5a hypotheses.
+
+        \item \textit{Einstein equations as consistency conditions} (Q6b): the Einstein--Hilbert
+        action is identified as the spectral entropy functional of the Gravity paper; conditional
+        on Q5a hypotheses.
+
+        \item \textit{$\AZ$ is not a free parameter} (Q8 §6.3): the value $\AZ = 2$ is fixed by
+        the Casimir of the unique irreducible $\su(2)$-module of dimension 3; it is a structural
+        identity, not a fitted constant.
+      \end{enumerate}
+
+    \subsection{Numerical evidence}
+      \label{sec:numerical}
+
+      \begin{enumerate}
+        \item \textit{$|A_H(q) - 2| \approx 0.264 q^{-0.44}$} (Q7, Q10): confirmed from the O25
+        campaign for $q \in \{61, 101, 151\}$; consistent with convergence to 2 with rate
+        $O(q^{-1/2})$.
+
+        \item \textit{Mosco tightness (Conjecture~[C])} (Q5a): spectral tail mass satisfies
+        $\mathcal{E}_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ for $q \in \{29, 61, 101, 151\}$,
+        with values decreasing toward machine precision.
+        Closed analytically on the admissible sector by Q5a-O2.
+      \end{enumerate}
+
+    \subsection{Open hypotheses}
+      \label{sec:open-hyp}
+
+      \begin{enumerate}
+        \item \textit{Hypothesis~[H1] on the full function space.}
+        Q5a Hypothesis~[H1] (embedding $\iota_q: \mathcal{C}_q \hookrightarrow L^2(\mathbb{R})$
+        with uniform control) is not needed in full generality on the admissible sector
+        (Q5a-O2), but its extension to the full $L^2$ context remains open.
+        This does not block any downstream result.
+
+        \item \textit{Bridge existence at finite $q$} (Q8-O1).
+        Q7 Conjecture~4.7 / Q8-O1: does an explicit $\su(2)$-equivariant isomorphism
+        $\phi_q: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$ exist at each prime $q$,
+        not only in the asymptotic limit?
+        The programme consequences ($\AZ = 2$, $\AH \to 2$, $\Atau = 2$) are established without
+        it; this is a secondary structural open problem.
+      \end{enumerate}
+
+  \section{Open Deliverables}
+    \label{sec:open}
+
+    Two open items define the boundary of the sub-programme as of this note.
+
+    \textbf{Open deliverable 1: Bridge existence at finite $q$.}
+    The asymptotic results ($\AZ = \AH = \Atau = 2$) and the metric closure
+    $\geff = 2\eta^{\mu\nu}$ are established in the $q \to \infty$ limit.
+    The finite-$q$ equivariant bridge $\phi_q$ — required for a fully explicit
+    representation-level identification at each prime — remains an open structural problem.
+    Its resolution would strengthen the narrative but would not change any published result.
+
+    \textbf{Open deliverable 2: [H1] on the full $L^2$ space.}
+    Q5a-O2 closes [H1] on the admissible sector.
+    The full-space version is not needed by any result in the programme and is listed here for
+    completeness.
 
   \section{Conclusion}
     \label{sec:conclusion}
-    % TODO
+
+    The emergent geometry sub-programme derives the effective Lorentzian metric
+    $\geff = 2\eta^{\mu\nu}$ from the admissibility filter $\Pi_q$ acting on the Weil
+    representation of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
+
+    The chain has five stages, each resolved by distinct papers: the discrete-to-continuum
+    Mosco limit (Q5a, Q5a-O2, W1, H2); the dimensional promotion via Carnot geometry (Q5b);
+    the metric extraction and signature selection (Q5b + Q9); the determination of the metric
+    coefficients $\AZ$, $\AH$, $\Atau$ via Casimir rigidity (Q7--Q11, U1); and the
+    assembly into the effective spacetime statement (Q6b).
+    All four metric coefficients equal 2, a single representation-theoretic datum: the
+    eigenvalue of the $\su(2)$-Casimir on the spin-1 module $\Sym^2(V_\rho)$.
+
+    The sub-programme closes the reconstruction problem: $\geff$ is not postulated but
+    derived.
+    The Lorentzian signature is not postulated but excluded by elimination.
+    The value of the conformal factor is not fitted but forced by the Casimir.
+
+    This note does not address the dynamics of $\geff$.
+    The question of why the effective metric satisfies the Einstein equations is handled by the
+    spectral gravity sub-programme (Presentation Note~4), which takes $\geff = 2\eta^{\mu\nu}$
+    as its starting point.
 
     \newpage
     \bibliographystyle{plain}
