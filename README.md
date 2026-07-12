@@ -1,5 +1,5 @@
 This repository contains the source of the **Emergent Geometry Presentation Note** Cosmochrony paper  
-[*The Emergent Geometry Sub-Programme — Presentation Note 2*](out/EmergentGeometryNote.pdf).
+*The Emergent Geometry Sub-Programme — Presentation Note 2*.
 
 This work is a **structured entry point** to the emergent geometry sub-programme of the
 Cosmochrony corpus, not a summary of results. It maps the constituent papers, identifies
