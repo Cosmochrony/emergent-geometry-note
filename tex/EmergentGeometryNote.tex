@@ -58,7 +58,7 @@
     central question: how does the admissible Weil--Heisenberg fibre give rise to an effective
     four-dimensional Lorentzian geometry?
     Starting from the admissibility filter $\Pi_q$ acting on the Weil representation
-    $V_\rho$ of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, the sub-programme closes the following chain:
+    $V_\rho$ of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$, the sub-programme organises the following chain:
     \[
       \Pi_q
       \;\Longrightarrow\;
@@ -74,9 +74,17 @@
     \]
     This note maps eleven constituent papers (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2)
     across five internal phases and records the status of every result.
-    The remaining open items are not obstructions to the admissible-sector metric closure.
-    They concern, respectively, the finite-$q$ bridge formulation and the extension of the
-    Q5a Mosco tightness control from the admissible sector to the full function space.
+    \emph{Status revision (version 1.1).}
+    Q5a version 3.0 withdraws the first link of this chain: the canonical filtration of the
+    admissible fibre is exactly a growing toric Fourier window, the published admissibility
+    form converges to the zero form on it, and no common scalar normalisation produces a
+    non-trivial toric differential operator.
+    The existence of the spatial limit operator $\Lpi = -A\partial_x^2$ is now the explicit,
+    unestablished hypothesis [H-L] (Q5b version 2.0), and every downstream result that
+    consumes it is conditional on [H-L].
+    The geometric convergence results (Carnot limit, $\Dhom = 4$) and the algebraic
+    coefficient rigidities (Q7, Q8, Q10, U1) are independent of [H-L] and stand.
+    Question Q5 is open.
   \end{abstract}
 
   \medskip
@@ -146,7 +154,8 @@ $\chi$ itself.
     \end{remark}
 
     \begin{remark}[Scope: metric reconstruction only]
-This sub-programme closes the chain $\Pi_q \to \geff = 2\eta^{\mu\nu}$.
+This sub-programme organises the chain $\Pi_q \to \geff = 2\eta^{\mu\nu}$, now
+conditional on [H-L] at its first link.
 It does not address the dynamics of $\geff$: the question of why the effective metric
 satisfies the Einstein equations is handled by the spectral gravity sub-programme, which
 takes the metric established here as its starting point.
@@ -161,7 +170,7 @@ takes the metric established here as its starting point.
       \label{eq:chain}
       \underbrace{\Pi_q}_{\text{admissibility filter}}
       \;\Longrightarrow\;
-      \underbrace{\Lpi = -A\partial_x^2}_{\substack{\text{1D shadow} \\ \text{(Mosco, Q5a)}}}
+      \underbrace{\Lpi = -A\partial_x^2}_{\substack{\text{1D shadow} \\ \text{(now [H-L])}}}
       \;\Longrightarrow\;
       \underbrace{\Leff \text{ on } \mathbb{R}_\tau \times \Heis_3(\mathbb{R})}_{\substack{\text{4D effective operator} \\ \text{(Carnot, Q5b)}}}
       \;\Longrightarrow\;
@@ -174,12 +183,17 @@ takes the metric established here as its starting point.
 
     \begin{enumerate}
       \item \textit{Discrete-to-continuum.}
-      Q5a establishes the Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$
-      on $\mathrm{Cay}(G_q, S_q)$ to a one-dimensional shadow operator
-      $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
-      Q5a-O2 closes the two remaining open hypotheses of Q5a ([H-E1] and Conjecture~[C])
-      via spectral atomicity.
-      H2 closes hypothesis~[H2].
+      Earlier versions of Q5a (up to 2.1) claimed the Mosco convergence of the admissibility
+      Dirichlet forms $\mathcal{E}_q$ on $\mathrm{Cay}(G_q, S_q)$ to a one-dimensional shadow
+      operator $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
+      Q5a version 3.0 withdraws this derivation and leaves Q5 open: the canonical filtration
+      is exactly a growing toric Fourier window, the published form converges to the zero
+      form, and no common scalar normalisation yields a non-trivial toric differential
+      operator.
+      This link is now the explicit hypothesis [H-L] (Q5b version 2.0).
+      Q5a-O2 closes hypotheses [H-E1] and Conjecture~[C] of the withdrawn framework via
+      spectral atomicity, and H2 closes hypothesis~[H2] of the same framework; these closures
+      retain independent interest but no longer establish the link.
 
       \item \textit{Dimensional promotion.}
       Q5b promotes the one-dimensional $\Lpi$ to a four-dimensional effective operator
@@ -187,8 +201,9 @@ takes the metric established here as its starting point.
       homogeneous dimension $\Dhom = 4$ and the Carnot convergence of BFS shells.
 
       \item \textit{Metric extraction.}
-      Q5b Theorem~5.2, made unconditional by Q9's proof of [H-lift], extracts the effective
-      co-metric tensor $\geff \propto A_{\mu\nu}$ from the principal symbol of $\Leff$.
+      Q5b Theorem~5.2, conditional on [H-L] with the lifting step [H-lift] proved in Q9,
+      extracts the effective co-metric tensor $\geff \propto A_{\mu\nu}$ from the principal
+      symbol of $\Leff$.
       Q5b Theorem~6.1 derives Lorentzian signature $(-, +, +, +)$ from the Born--Infeld
       admissibility constraint.
 
@@ -212,27 +227,26 @@ takes the metric established here as its starting point.
     \subsection{Continuum limit and one-dimensional shadow: Q5a and Q5a-O2}
       \label{sec:q5a}
 
-      \textbf{Q5a}~\cite{Beau2026q5a} establishes, conditionally on hypotheses [H1], [H-w],
-      [H-E1], and Conjecture~[C], three convergences.
-      (T1)~A Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
-      $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at
-      finite $q$.
-      (T2)~Convergence of rescaled Weil generators to the metaplectic generators of
-      $\Heis_3(\mathbb{R})$.
-      (T3)~Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to the
-      second-order operator $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$, $A > 0$.
+      \textbf{Q5a}~\cite{Beau2026q5a}, in its versions up to 2.1, claimed, conditionally on
+      hypotheses [H1], [H-w], [H-E1], and Conjecture~[C], three convergences: a Hilbert
+      inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$ (T1), convergence of
+      rescaled Weil generators to the metaplectic generators of $\Heis_3(\mathbb{R})$ (T2), and
+      Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to the
+      second-order operator $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$, $A > 0$ (T3).
 
-      The key conceptual content of Q5a is that the continuum limit is not an additional
-      assumption: it is forced by the coercivity and compactness properties of the admissible
-      forms.
-      Uniform energy bounds prevent spectral mass from escaping to high frequencies;
-      the Mosco limit is the unique operator compatible with spectral stability.
-
-      $\Lpi$ is a one-dimensional operator.
-      Q5a states explicitly that ``the operator $\Lpi$ is the one-dimensional operator-theoretic
-      shadow of the homogeneous four-dimensional structure of $\Heis_3(\mathbb{R})$.
-      The identification of $\Lpi$ with a four-dimensional effective geometry is the subject of
-      Q5b.''
+      Q5a version 3.0 (\emph{Canonical Fourier Filtration and the Obstruction to a Spatial
+      Continuum Limit}) withdraws this framework and replaces it with three established
+      results: an exact identification (the canonical filtration stage is precisely the toric
+      Fourier window $\mathrm{span}\{e^{2\pi i b x/q} : |b| \le n\}$), a zero-form theorem
+      (the published admissibility form converges to the zero form on this filtration, at rate
+      $q^{-2}$), and a normalisation no-go (under a diverging saturation depth and the measured
+      weight behaviour, no common scalar normalisation of the form produces a non-trivial toric
+      differential operator).
+      The only non-trivial rescaled limit is a conditional Dirichlet operator in the rescaled
+      \emph{frequency} variable, which does not provide a spatial continuum.
+      Consequently, no operator $-A\partial_x^2$ on a spatial $L^2$ space is derived anywhere
+      in the corpus; the existence of such an operator is the explicit hypothesis [H-L]
+      (Q5b version 2.0), and Q5 is open.
 
       The O-series link is structural: Hypothesis~[H-E1] (uniform spectral gap) is equivalent to the
       stabilisation of $\delta_{\mathrm{pair}}$ across primes, supported by the O12--O25 campaign.
@@ -245,7 +259,10 @@ takes the metric established here as its starting point.
       $\xi_c^{(q)}/q \to \omega_c \neq 0$.
       From this structure, coercivity at the optimal diffusive scale follows without any Nash or
       Rellich inequality, and Mosco compactness follows from Bolzano--Weierstrass in $\mathbb{C}^2$.
-      Hypotheses [H-E1] and [C] become unconditional theorems on the admissible sector.
+      Hypotheses [H-E1] and [C] become unconditional theorems on the admissible sector
+      \emph{within the framework of Q5a versions up to 2.1}; after the version 3.0 withdrawal,
+      these closures apply to components of the frozen framework [H-F] (Q9 version 1.1) and
+      retain independent interest as structural facts about the admissible sector.
 
     \subsection{Carnot geometry and Lorentzian signature: Q5b}
       \label{sec:q5b}
@@ -262,8 +279,9 @@ takes the metric established here as its starting point.
       This result is structural: it follows from Pansu's asymptotic cone theorem and requires
       no new hypothesis.
 
-      \textit{Metric extraction} (Theorem~5.2; unconditional via Q9~\cite{Beau2026q9}).
-      Under [H-lift] — proved in Q9 as a theorem rather than a hypothesis — $\Lpi$ is the image,
+      \textit{Metric extraction} (Theorem~5.2; conditional on [H-L], with the lifting step
+      proved in Q9~\cite{Beau2026q9}).
+      Under [H-L] and [H-lift] — the latter proved in Q9 — $\Lpi$ is the image,
       under the Schr\"{o}dinger representation $\pi_1$, of the kinetic sector of the
       sub-Riemannian Laplacian $\Delta_H = \tilde{X}^2 + \tilde{Y}^2$ on $\Heis_3(\mathbb{R})$,
       restricted to the admissible sector.
@@ -303,8 +321,10 @@ takes the metric established here as its starting point.
       Q6b closes the chain $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ under the Q5a--Q5b
       hypotheses.
       With [H-lift] proved in Q9, the results of Q6b are unconditional with respect to [H-lift].
-      The remaining conditionality stems from the Q5a Mosco hypotheses [H1], [H-w], [H-E1],
-      and~[C]; of these, [H-w] is proved in W1, and [H-E1] and [C] are closed in Q5a-O2.
+      The remaining conditionality is carried by the spatial limit hypothesis [H-L]
+      (Q5b version 2.0), which Q5a version 3.0 shows to fail for the published normalisation
+      and its common scalar rescalings; the closures of [H-w] (W1) and of [H-E1] and [C]
+      (Q5a-O2) apply to components of the withdrawn framework.
 
       \begin{remark}[Status of Q6b]
 Q6b is listed as published in the programme.
@@ -384,29 +404,32 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
       \textbf{W1}~\cite{Beau2026w1} proves hypothesis~[H-w] (convergence of the admissibility
       weights $a_q(s) \to A > 0$) as a structural consequence of the fibre-invariance of
       admissible observables, made quantitative by U1.
-      After W1, the open Q5a hypotheses reduce to [H1], [H-E1], and~[C].
+      These closures apply to the framework of Q5a versions up to 2.1, withdrawn in
+      version 3.0; they are consumed as components of [H-F].
 
       \textbf{H2}~\cite{Beau2026h2} proves hypothesis~[H2] (strong convergence of the rescaled
       Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative
       Poisson aliasing lemma and a discrete Sobolev identity.
-      Together with Q5a-O2, H2 completes the closure of all Q5a hypotheses on the admissible
-      sector.
+      Together with Q5a-O2, H2 completes the closure of all hypotheses of that framework on
+      the admissible sector; the framework itself is no longer established (Q5a version 3.0),
+      and the residual conditionality of the chain is [H-L].
 
       \begin{table}[ht]
         \centering
         \caption{Summary of constituent papers by internal phase.
-        Status: P = proved; S = structural; C = conditional on Q5a hypotheses.}
+        Status: P = proved; S = structural; C = conditional on the unestablished spatial
+        limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0).}
         \label{tab:papers}
         \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{@{}lllll@{}}
           \toprule
           Phase & Papers & Central output & Status \\
           \midrule
-          Discrete-to-continuum & Q5a, Q5a-O2, H2 & $\Lpi = -A\partial_x^2$; [H-E1],[C],[H2] closed & P/S \\
+          Discrete-to-continuum & Q5a, Q5a-O2, H2 & Fourier window; no-go; $\Lpi \to$ [H-L] & C \\
           Dimensional promotion & Q5b & $\Dhom = 4$; Carnot convergence & S \\
-          Metric extraction & Q5b + Q9 & $\geff \propto A_{\mu\nu}$; signature $(-, +, +, +)$ & P \\
+          Metric extraction & Q5b + Q9 & $\geff \propto A_{\mu\nu}$; signature $(-, +, +, +)$ & C \\
           Coefficient determination & Q7, Q8, Q10, U1 & $\AZ = \AH = 2$ & P/S \\
-          Metric closure & Q11, W1 & $\Atau = 2$; $\geff = 2\eta^{\mu\nu}$ & S/P \\
+          Metric closure & Q11, W1 & $\Atau = 2$; $\geff = 2\eta^{\mu\nu}$ & S/C \\
           Integrative output & Q6b & $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ & C \\
           \bottomrule
         \end{tabular}
@@ -482,11 +505,12 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
 
         \item \textit{$[\text{H-lift}]$} (Q9 Theorem~1.2): the admissibility filter concentrates
         on the kinetic sector of $d\pi_1(\Delta_H)$ at rate $O(q^{-1/2})$, making $\Lpi$ the
-        kinetic shadow of $\Delta_H$ without independent hypothesis.
+        kinetic shadow of $\Delta_H$ without independent hypothesis; conditional on the frozen
+        framework [H-F] (Q9 version 1.1).
 
-        \item \textit{Metric extraction} (Q5b Theorem~5.2, unconditional via Q9): the effective
-        co-metric $\geff \propto A_{\mu\nu}$ is extracted from the principal symbol of $\Leff$
-        under the Q5a hypotheses.
+        \item \textit{Metric extraction} (Q5b Theorem~5.2, conditional on [H-L]; lifting step
+        via Q9): the effective co-metric $\geff \propto A_{\mu\nu}$ is extracted from the
+        principal symbol of $\Leff$ under [H-L].
 
         \item \textit{Lorentzian signature} (Q5b Theorem~6.1): signature $(-, +, +, +)$ is forced by
         the Born--Infeld admissibility constraint via exclusion of all other signature classes.
@@ -535,11 +559,11 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
 
         \item \textit{Schwarzschild exterior metric} (Q6b): flux conservation within the effective
         geometry forces the Schwarzschild metric as the unique stationary spherically symmetric
-        exterior solution; conditional on Q5a hypotheses.
+        exterior solution; conditional on [H-L].
 
         \item \textit{Einstein equations as consistency conditions} (Q6b): the Einstein--Hilbert
         action is identified as the spectral entropy functional of the Gravity paper; conditional
-        on Q5a hypotheses.
+        on [H-L].
 
         \item \textit{$\AZ$ is not a free parameter} (Q8 §6.3): the value $\AZ = 2$ is fixed by
         the Casimir of the unique irreducible $\su(2)$-module of dimension 3; it is a structural
@@ -557,18 +581,32 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         \item \textit{Mosco tightness (Conjecture~[C])} (Q5a): spectral tail mass satisfies
         $\mathcal{E}_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ for $q \in \{29, 61, 101, 151\}$,
         with values decreasing toward machine precision.
-        Closed analytically on the admissible sector by Q5a-O2.
+        Closed analytically on the admissible sector by Q5a-O2 (within the withdrawn
+        framework).
       \end{enumerate}
 
     \subsection{Open hypotheses}
       \label{sec:open-hyp}
 
       \begin{enumerate}
+        \item \textit{Spatial limit hypothesis [H-L]} (Q5a 3.0, Q5b 2.0).
+        The existence of a spatial second-order limit operator $\Lpi = -A\partial_x^2$ on
+        $L^2(\mathbb{R})$ is not established: Q5a version 3.0 proves that the published
+        normalisation yields the zero form and that no common scalar normalisation yields a
+        non-trivial toric differential operator.
+        The only identified potential source is the conditional dual-window regime, requiring
+        an asymptotically non-vanishing critical coverage --- contradicted by the published
+        data.
+        This is the principal obstruction of the sub-programme; every metric result is
+        conditional on it, and Q5 is open.
+
         \item \textit{Hypothesis~[H1] on the full function space.}
         Q5a Hypothesis~[H1] (embedding $\iota_q: \mathcal{C}_q \hookrightarrow L^2(\mathbb{R})$
-        with uniform control) is not needed in full generality on the admissible sector
-        (Q5a-O2), but its extension to the full $L^2$ context remains open.
-        This does not block any downstream result.
+        with uniform control; part of the withdrawn framework [H-F]) is not needed in full
+        generality on the admissible sector (Q5a-O2), but its extension to the full $L^2$
+        context remains open.
+        This does not block any downstream result beyond the conditionality already carried
+        by [H-L].
 
         \item \textit{Bridge existence at finite $q$} (Q8-O1).
         Q7 Conjecture~4.7 / Q8-O1: does an explicit $\su(2)$-equivariant isomorphism
@@ -581,7 +619,15 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
   \section{Open Deliverables}
     \label{sec:open}
 
-    Two open items define the boundary of the sub-programme as of this note.
+    Three open items define the boundary of the sub-programme as of this note.
+
+    \textbf{Open deliverable 0: the spatial limit input [H-L].}
+    Establishing --- or replacing --- the spatial limit operator $\Lpi = -A\partial_x^2$
+    consumed by the metric chain.
+    Q5a version 3.0 shows that the published admissibility form does not produce it under any
+    common scalar normalisation; the conditional dual-window Dirichlet limit is a dual-space
+    statement and does not provide a spatial continuum.
+    This is the open content of Q5 and the principal obstruction of the sub-programme.
 
     \textbf{Open deliverable 1: Bridge existence at finite $q$.}
     The asymptotic results ($\AZ = \AH = \Atau = 2$) and the metric closure
@@ -602,17 +648,20 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
     $\geff = 2\eta^{\mu\nu}$ from the admissibility filter $\Pi_q$ acting on the Weil
     representation of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
 
-    The chain has five stages, each resolved by distinct papers: the discrete-to-continuum
-    Mosco limit (Q5a, Q5a-O2, W1, H2); the dimensional promotion via Carnot geometry (Q5b);
+    The chain has five stages, each addressed by distinct papers: the discrete-to-continuum
+    stage, now the open hypothesis [H-L] after the Q5a version 3.0 withdrawal (Q5a, Q5a-O2,
+    W1, H2); the dimensional promotion via Carnot geometry (Q5b);
     the metric extraction and signature selection (Q5b + Q9); the determination of the metric
     coefficients $\AZ$, $\AH$, $\Atau$ via Casimir rigidity (Q7--Q11, U1); and the
     assembly into the effective spacetime statement (Q6b).
     All four metric coefficients equal 2, a single representation-theoretic datum: the
     eigenvalue of the $\su(2)$-Casimir on the spin-1 module $\Sym^2(V_\rho)$.
 
-    The sub-programme closes the reconstruction problem: $\geff$ is not postulated but
-    derived.
-    The Lorentzian signature is not postulated but excluded by elimination.
+    Under [H-L], the sub-programme closes the reconstruction problem: $\geff$ is not
+    postulated but derived, and the Lorentzian signature is not postulated but excluded by
+    elimination.
+    Without [H-L], the geometric and algebraic stages stand, and the discrete-to-continuum
+    stage is open: this is the current state of Q5.
     The value of the conformal factor is not fitted but forced by the Casimir.
 
     This note does not address the dynamics of $\geff$.

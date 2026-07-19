@@ -16,8 +16,16 @@ bounded-flux constraint.
 > What effective geometry is selected in the large-$q$ limit of this structure, and what
 > determines the numerical values of its metric coefficients?
 
-The sub-programme removes the postulate of a background spacetime: the effective metric is a
-forced consequence of admissibility, not an input. This note concerns the **reconstruction**
+**Status revision (version 1.1).** Q5a version 3.0 withdraws the first link of the chain
+(the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
+growing toric Fourier window, the published form converges to the zero form, and no common
+scalar normalisation produces a non-trivial toric differential operator. The spatial limit
+operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0), every metric
+result is conditional on it, and Q5 is open. The geometric convergence results (Carnot,
+$D_{\mathrm{hom}}=4$) and the algebraic coefficient rigidities are independent of [H-L].
+
+Under [H-L], the sub-programme removes the postulate of a background spacetime: the effective
+metric is a forced consequence of admissibility, not an input. This note concerns the **reconstruction**
 of the metric only; its dynamics (the Einstein equations) belong to the spectral gravity
 sub-programme.
 
@@ -37,8 +45,9 @@ g^{\mu\nu} = 2\eta^{\mu\nu}$.
 
 Five conceptually distinct stages, each resolved by a distinct group of papers:
 
-1. **Discrete-to-continuum** — Mosco convergence of the admissibility Dirichlet forms to the
-   one-dimensional shadow $L_\Pi = -A\partial_x^2$ (Q5a; Q5a-O2 and H2 close the open hypotheses).
+1. **Discrete-to-continuum** — now the open hypothesis [H-L]: Q5a 3.0 withdraws the Mosco
+   derivation of $L_\Pi = -A\partial_x^2$ (Q5a-O2 and H2 closed hypotheses of the withdrawn
+   framework).
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
    homogeneous dimension $D_{\mathrm{hom}} = 4$ promote $L_\Pi$ to a 4D operator $L_{\mathrm{eff}}$
    on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ (Q5b).
@@ -68,14 +77,15 @@ The note maps **twelve** constituent papers, organised by internal phase:
 
 | Phase | Papers | Central output | Status |
 |---|---|---|---|
-| Discrete-to-continuum | Q5a, Q5a-O2, H2 | $L_\Pi = -A\partial_x^2$; [H-E1],[C],[H2] closed | P/S |
+| Discrete-to-continuum | Q5a, Q5a-O2, H2 | Fourier window; no-go; $L_\Pi \to$ [H-L] | C |
 | Dimensional promotion | Q5b | $D_{\mathrm{hom}} = 4$; Carnot convergence | S |
-| Metric extraction | Q5b + Q9 | $g^{\mu\nu} \propto A_{\mu\nu}$; signature $(-,+,+,+)$ | P |
+| Metric extraction | Q5b + Q9 | $g^{\mu\nu} \propto A_{\mu\nu}$; signature $(-,+,+,+)$ | C |
 | Coefficient determination | Q7, Q8, Q10, U1 | $A_Z = A_H = 2$ | P/S |
-| Metric closure | Q11, W1 | $A_\tau = 2$; $g^{\mu\nu} = 2\eta^{\mu\nu}$ | S/P |
+| Metric closure | Q11, W1 | $A_\tau = 2$; $g^{\mu\nu} = 2\eta^{\mu\nu}$ | S/C |
 | Integrative output | Q6b | $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$ | C |
 
-Status codes: **P** = proved, **S** = structural, **C** = conditional on the Q5a Mosco hypotheses.
+Status codes: **P** = proved, **S** = structural, **C** = conditional on the unestablished
+spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0).
 
 ## Open Deliverables
 
