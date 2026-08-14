@@ -46,8 +46,9 @@ g^{\mu\nu} = 2\eta^{\mu\nu}$.
 Five conceptually distinct stages, each resolved by a distinct group of papers:
 
 1. **Discrete-to-continuum** — now the open hypothesis [H-L]: Q5a 3.0 withdraws the Mosco
-   derivation of $L_\Pi = -A\partial_x^2$ (Q5a-O2 and H2 closed hypotheses of the withdrawn
-   framework).
+   derivation of $L_\Pi = -A\partial_x^2$ (H2 closed hypothesis [H2] of the withdrawn framework;
+   Q5a-O2 establishes the pipeline's pure-Fourier structure and truncation status, leaving
+   [H-E1] and [C] open).
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
    homogeneous dimension $D_{\mathrm{hom}} = 4$ promote $L_\Pi$ to a 4D operator $L_{\mathrm{eff}}$
    on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ (Q5b).
@@ -66,9 +67,10 @@ eigenvalue of the $\mathfrak{su}(2)$-Casimir on the spin-1 module $\mathrm{Sym}^
 The sub-programme sits at the interface between Branch I (axiomatic primitive) and Branch III
 (physical observables). It takes from Branch I the Weil representation of
 $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and the Born--Infeld admissibility constraint, and from
-Presentation Note 1 (spectral admissibility) the facts that the admissible sector is the
-spin-$\tfrac12$ sector $V_\rho \cong \mathbb{C}^2$ and that $\Sigma_c(n_3) = 3$ with
-$\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$. It produces the effective Lorentzian metric used
+Presentation Note 1 (spectral admissibility) the supplied inputs that the admissible sector is
+carried by the spin-$\tfrac12$ carrier $V_\rho \cong \mathbb{C}^2$ and that $\Sigma_c(n_3) = 3$
+(a supplied selection rule, with $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ the adjoint
+dimension of that carrier). It produces the effective Lorentzian metric used
 throughout Branch III.
 
 ## Constituent Papers
@@ -93,8 +95,8 @@ spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0).
    metric closure $g^{\mu\nu} = 2\eta^{\mu\nu}$ hold in the $q \to \infty$ limit. An explicit
    $\mathfrak{su}(2)$-equivariant bridge $\phi_q: \mathrm{Sym}^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$
    at each prime remains an open structural problem (no published result depends on it).
-2. **Hypothesis [H1] on the full $L^2$ space.** Closed on the admissible sector by Q5a-O2; the
-   full-space version is not needed by any result and is listed for completeness.
+2. **Hypothesis [H1] on the full $L^2$ space.** Open; the full-space version is not needed by
+   any result and is listed for completeness.
 
 ## Build
 

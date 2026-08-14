@@ -191,9 +191,11 @@ takes the metric established here as its starting point.
       form, and no common scalar normalisation yields a non-trivial toric differential
       operator.
       This link is now the explicit hypothesis [H-L] (Q5b version 2.0).
-      Q5a-O2 closes hypotheses [H-E1] and Conjecture~[C] of the withdrawn framework via
-      spectral atomicity, and H2 closes hypothesis~[H2] of the same framework; these closures
-      retain independent interest but no longer establish the link.
+      Q5a-O2 establishes the pure-Fourier-mode structure of the pre-saturation pipeline and the
+      truncation status of its finite-rank reduction, and rules out the $q^{-1}$ coercivity
+      scale; hypotheses [H-E1] and Conjecture~[C] of the withdrawn framework are not closed by
+      that route, their disposition being the zero-form Mosco limit of Q5a version 3.0.
+      H2 closes hypothesis~[H2] of the same framework.
 
       \item \textit{Dimensional promotion.}
       Q5b promotes the one-dimensional $\Lpi$ to a four-dimensional effective operator
@@ -253,16 +255,16 @@ takes the metric established here as its starting point.
       Hypothesis~[H-w] (admissibility weight convergence $a_q(s) \to A > 0$) is proved in
       W1~\cite{Beau2026w1}.
 
-      \textbf{Q5a-O2}~\cite{Beau2026q5ao2} resolves the two remaining open hypotheses of Q5a.
-      It proves that the admissible sector $\mathrm{ran}(\Pi_q)$ is spectrally atomic:
-      it is spanned by three pure Fourier modes per conjugate pair, with macroscopic frequencies
-      $\xi_c^{(q)}/q \to \omega_c \neq 0$.
-      From this structure, coercivity at the optimal diffusive scale follows without any Nash or
-      Rellich inequality, and Mosco compactness follows from Bolzano--Weierstrass in $\mathbb{C}^2$.
-      Hypotheses [H-E1] and [C] become unconditional theorems on the admissible sector
-      \emph{within the framework of Q5a versions up to 2.1}; after the version 3.0 withdrawal,
-      these closures apply to components of the frozen framework [H-F] (Q9 version 1.1) and
-      retain independent interest as structural facts about the admissible sector.
+      \textbf{Q5a-O2}~\cite{Beau2026q5ao2} gives the exact Fourier description of the
+      pre-saturation pipeline and the epistemic status of its finite-rank reduction.
+      BFS fingerprints and selected Gram--Schmidt vectors are pure Fourier modes, with realised
+      frequencies $o(q)$; the three-coordinate reduction is a truncation fixed in advance
+      ($\mathrm{HEFF\_DIM}=3$), from which no admissible rank can be measured; and the
+      admissibility form is $O(q^{-2})$ on normalised modes, which rules out the $q^{-1}$
+      coercivity scale.
+      Hypotheses [H-E1] and [C] of the former framework are therefore not closed by a
+      finite-rank route; their disposition is the zero-form Mosco limit on the canonical
+      Fourier-window filtration established by Q5a version 3.0.
 
     \subsection{Carnot geometry and Lorentzian signature: Q5b}
       \label{sec:q5b}
@@ -323,8 +325,9 @@ takes the metric established here as its starting point.
       With [H-lift] proved in Q9, the results of Q6b are unconditional with respect to [H-lift].
       The remaining conditionality is carried by the spatial limit hypothesis [H-L]
       (Q5b version 2.0), which Q5a version 3.0 shows to fail for the published normalisation
-      and its common scalar rescalings; the closures of [H-w] (W1) and of [H-E1] and [C]
-      (Q5a-O2) apply to components of the withdrawn framework.
+      and its common scalar rescalings; the closure of [H-w] (W1) applies to a component of the
+      withdrawn framework, while [H-E1] and [C] are not closed by the finite-rank route of
+      Q5a-O2.
 
       \begin{remark}[Status of Q6b]
 Q6b is listed as published in the programme.
@@ -459,7 +462,8 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
 
       \item \textbf{O-series universality data.}
       The stabilisation of $\delta_{\mathrm{pair}}(q)$ across the O12--O25 campaign provides
-      the numerical support for [H-E1] and for the spectral universality [U] required by Q10.
+      numerical support for the spectral universality [U] required by Q10; [H-E1] itself is open
+      (its $q^{-1}$ scale is ruled out on the canonical filtration).
     \end{enumerate}
 
   \section{Outputs to Downstream Branches}
@@ -536,8 +540,9 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         \item \textit{$[\text{H2}]$} (H2): strong convergence of rescaled Weil generators via
         Poisson aliasing lemma and discrete Sobolev identity.
 
-        \item \textit{$[\text{H-E1}]$ and $[\text{C}]$ on the admissible sector} (Q5a-O2): proved
-        via spectral atomicity of $\mathrm{ran}(\Pi_q)$.
+        \item \textit{$[\text{H-E1}]$ and $[\text{C}]$} (Q5a-O2, Q5a v3.0): not closed by the
+        finite-rank route; the $q^{-1}$ coercivity scale is ruled out and the published form has
+        zero-form Mosco limit on the canonical filtration.
 
         \item \textit{$\Atau = 2$} (Q11 Theorem~1.1): temporal Casimir rigidity; cascade
         internalization lemma, Schur rigidity, and Q8 normalisation close $\Atau$.
@@ -581,8 +586,9 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         \item \textit{Mosco tightness (Conjecture~[C])} (Q5a): spectral tail mass satisfies
         $\mathcal{E}_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ for $q \in \{29, 61, 101, 151\}$,
         with values decreasing toward machine precision.
-        Closed analytically on the admissible sector by Q5a-O2 (within the withdrawn
-        framework).
+        The analytical disposition is the zero-form Mosco limit of Q5a version 3.0; the small
+        tail mass is the numerical face of the vanishing form, not a non-trivial tightness
+        proof.
       \end{enumerate}
 
     \subsection{Open hypotheses}
