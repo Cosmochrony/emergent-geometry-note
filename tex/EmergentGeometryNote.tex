@@ -72,7 +72,7 @@
       \;\Longrightarrow\;
       \geff
       \;\Longrightarrow\;
-      \geff = 2\eta^{\mu\nu}.
+      \geff \propto \eta^{\mu\nu}.
     \]
     This note maps eleven constituent papers (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2)
     across five internal phases and records the status of every result.
@@ -84,8 +84,19 @@
     The existence of the spatial limit operator $\Lpi = -A\partial_x^2$ is now the explicit,
     unestablished hypothesis [H-L] (Q5b version 2.0), and every downstream result that
     consumes it is conditional on [H-L].
-    The geometric convergence results (Carnot limit, $\Dhom = 4$) and the algebraic
-    coefficient rigidities (Q7, Q8, Q10, U1) are independent of [H-L] and stand.
+    The geometric convergence results (Carnot limit, $\Dhom = 4$) are independent of [H-L]
+    and stand.
+    No metric coefficient value is established: invariance fixes the shape of an invariant
+    spatial form and leaves its scale free (Q8), leaves the temporal coefficient independent of
+    the spatial one (Q11), and the isotropy route of Q10 rests on inputs that are not supplied;
+    the value 2 is the eigenvalue of the $\su(2)$ Casimir on the spin-one module in one
+    normalisation of the generators, not a coefficient.
+    On the signature axis, Q5b establishes, conditionally, a rank-three co-metric whose
+    non-degenerate block has signature $(-,+,+)$; the rank-four extension that the last link
+    of the chain presupposes is not constructed (open problem Q5b-O2), and the endpoint
+    $\geff \propto \eta^{\mu\nu}$ holds only for an extension satisfying the hypotheses of Q11
+    Corollary~6.1 ([T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance and a negative ordering term), after rescaling $\tau$, with its
+    overall scale free.
     Question Q5 is open.
   \end{abstract}
 
@@ -120,12 +131,15 @@
     Without a derived metric, the dynamical outputs of the Gravity paper~\cite{Beau2026h},
     the gauge structure of Q6a~\cite{Beau2026q6a}, and the spinorial structure of
     Q14~\cite{Beau2026q14} would each require an independently postulated background.
-    The emergent geometry sub-programme removes this postulate: spacetime is a
-    forced consequence of admissibility, not an input.
+    The emergent geometry sub-programme aims to remove this postulate by reconstructing the
+    effective geometry from admissibility rather than postulating it; the reconstruction is at
+    present conditional and incomplete (Section~\ref{sec:status}).
 
     \medskip
-    This note is concerned exclusively with the reconstruction of the effective metric
-    $\geff = 2\eta^{\mu\nu}$.
+    This note is concerned exclusively with the reconstruction of an effective metric of the
+    form $\geff \propto \eta^{\mu\nu}$, a target that presupposes a rank-four extension of the
+    co-metric (open problem Q5b-O2) and whose overall scale is not fixed
+    (Section~\ref{sec:q7q11}).
     The dynamical content — why the effective metric satisfies the Einstein equations — is
     the subject of the spectral gravity sub-programme and is not claimed here.
 
@@ -136,7 +150,8 @@
     primitive) and Branch~III (physical observables).
     It takes the algebraic output of Branch~I — the Weil representation of
     $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and the Born--Infeld admissibility constraint — and
-    produces the effective Lorentzian metric used throughout Branch~III.
+    aims to produce the effective Lorentzian metric used throughout Branch~III; it currently
+    yields, conditionally, a rank-three co-metric (Section~\ref{sec:status}).
 
     \medskip
     Its relation to the spectral admissibility sub-programme (Presentation Note~1) is the
@@ -158,11 +173,12 @@ $\chi$ itself.
     \end{remark}
 
     \begin{remark}[Scope: metric reconstruction only]
-This sub-programme organises the chain $\Pi_q \to \geff = 2\eta^{\mu\nu}$, now
-conditional on [H-L] at its first link.
+This sub-programme organises the chain $\Pi_q \to \geff \propto \eta^{\mu\nu}$, now
+conditional on [H-L] at its first link and incomplete at its last: the rank-four extension is
+open (Q5b-O2) and no coefficient value is derived.
 It does not address the dynamics of $\geff$: the question of why the effective metric
 satisfies the Einstein equations is handled by the spectral gravity sub-programme, which
-takes the metric established here as its starting point.
+takes the metric targeted here as its starting point.
     \end{remark}
 
   \section{Logical Chain of the Sub-Programme}
@@ -178,11 +194,18 @@ takes the metric established here as its starting point.
       \;\Longrightarrow\;
       \underbrace{\Leff \text{ on } \mathbb{R}_\tau \times \Heis_3(\mathbb{R})}_{\substack{\text{4D effective operator} \\ \text{(Carnot, Q5b)}}}
       \;\Longrightarrow\;
-      \underbrace{\geff \propto A_{\mu\nu}}_{\substack{\text{metric extraction} \\ \text{(Q5b + Q9)}}}
+      \underbrace{\geff \propto A_{\mu\nu}}_{\substack{\text{metric extraction} \\ \text{(Q5b, [H-lift])}}}
       \;\Longrightarrow\;
-      \underbrace{\geff = 2\eta^{\mu\nu}}_{\substack{\text{metric closure} \\ \text{(Q8--Q11, with U1, W1, H2)}}}.
+      \underbrace{\geff \propto \eta^{\mu\nu}}_{\substack{\text{metric closure (target)} \\ \text{(Q8, Q11)}}}.
     \end{equation}
 
+    The last link presupposes a rank-four extension of the rank-three co-metric of Q5b, which is
+    not constructed (open problem Q5b-O2); it holds only for an extension satisfying the
+    hypotheses of Q11 Corollary~6.1 ([T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance and a negative ordering term), after rescaling
+    $\tau$, with an overall scale that no source fixes (Section~\ref{sec:q7q11}).
+    A rank-four Lorentzian extension alone does not suffice: the extension
+    $\mathrm{diag}(-1, 1, 1, 3)$ of the Q5b block has central entry different from the horizontal
+    one, and no rescaling of $\tau$ makes it proportional to $\eta^{\mu\nu}$.
     The chain has five conceptually distinct stages, each resolved by a distinct group of papers.
 
     \begin{enumerate}
@@ -207,24 +230,35 @@ takes the metric established here as its starting point.
       homogeneous dimension $\Dhom = 4$ and the Carnot convergence of BFS shells.
 
       \item \textit{Metric extraction.}
-      Q5b Theorem~5.2, conditional on [H-L] with the lifting step [H-lift] proved in Q9,
+      Q5b Theorem~5.2, conditional on [H-L] and on the open lifting hypothesis [H-lift],
       extracts the effective co-metric tensor $\geff \propto A_{\mu\nu}$ from the principal
-      symbol of $\Leff$.
-      Q5b Theorem~6.1 derives Lorentzian signature $(-, +, +, +)$ from the Born--Infeld
-      admissibility constraint.
+      symbol of $\Leff$; it has rank three, with an empty central slot.
+      Q5b Theorem~6.1, conditional in addition on the hyperbolicity hypothesis
+      [H-hyp$_{\mathrm{red}}$] applied to the reduction of $\Leff$ to functions independent of the
+      central variable, gives signature $(-,+,+)$ on the non-degenerate block; a diagonal
+      extension with positive central entry would have signature $(-,+,+,+)$, and constructing
+      it is the open problem Q5b-O2.
 
       \item \textit{Coefficient determination.}
-      Q7 identifies the effective projection space $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ as
-      the unique irreducible three-dimensional $\su(2)$-module and establishes the bridge
-      rigidity $\phi: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$.
-      Q8 derives $\AZ = C_{\su(2)} = 2$ via Casimir rigidity on the central direction.
-      Q10 establishes $\AH \to 2$ under spectral universality~[U].
-      U1 proves [U] with rate $\varepsilon(q) = O(q^{-1/2})$.
+      Under the supplied identification [ID] of the effective projection space with the
+      spin-one module $\Sym^2(V_\rho)$ and a supplied spatial action [ACT], Q7 shows that an
+      equivariant bridge $\Sym^2(V_\rho) \to W_{\mathrm{sp}} \otimes_\mathbb{R} \mathbb{C}$ is zero
+      or an isomorphism, unique up to one non-zero complex scalar; its geometric target remains
+      to be constructed (Q7 Conjecture~4.7).
+      For a supplied positive rank-three target with full $\su(2)$-invariance, Q8 gives
+      $\AH = \AZ = 2\lambda$ with $\lambda > 0$ free; no value of $\AZ$ is derived.
+      Q10 bounds the ratio $\AH/\AZ$ under spectral universality~[U] and three further inputs
+      that are not supplied, and derives no value.
+      [U] is open: U1 withdraws its former proof and proves an equidistance obstruction.
 
       \item \textit{Metric closure.}
-      Q11 closes the sole remaining open coefficient $\Atau = 2$ via temporal Casimir
-      rigidity, giving $\geff = 2\eta^{\mu\nu}$.
-      W1 closes [H-w].
+      Q11 shows that invariance under a spatial $\SU(2)$ action leaves the temporal
+      coefficient $\Atau$ independent of the spatial scale, so $\Atau$ is not derived.
+      For a supplied rank-four extension satisfying [T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance and a negative ordering term
+      (Q11 Corollary~6.1; Q5b-O2 open), the co-metric is
+      $\mathrm{diag}(-\Atau, 2\lambda, 2\lambda, 2\lambda)$, and $\geff \propto \eta^{\mu\nu}$
+      after rescaling $\tau$, with its overall scale free.
+      Hypothesis [H-w] is open (W1 version 2.0.1).
     \end{enumerate}
 
   \section{Constituent Papers}
@@ -256,8 +290,8 @@ takes the metric established here as its starting point.
 
       The O-series link is structural: Hypothesis~[H-E1] (uniform spectral gap) is equivalent to the
       stabilisation of $\delta_{\mathrm{pair}}$ across primes, supported by the O12--O25 campaign.
-      Hypothesis~[H-w] (admissibility weight convergence $a_q(s) \to A > 0$) is proved in
-      W1~\cite{Beau2026w1}.
+      Hypothesis~[H-w] (admissibility weight convergence $a_q(s) \to A > 0$) is open:
+      W1~\cite{Beau2026w1} version 2.0.1 withdraws its former proof.
 
       \textbf{Q5a-O2}~\cite{Beau2026q5ao2} gives the exact Fourier description of the
       pre-saturation pipeline and the epistemic status of its finite-rank reduction.
@@ -286,24 +320,38 @@ takes the metric established here as its starting point.
       This result is structural: it follows from Pansu's asymptotic cone theorem and requires
       no new hypothesis.
 
-      \textit{Metric extraction} (Theorem~5.2; conditional on [H-L], with the lifting step
-      proved in Q9~\cite{Beau2026q9}).
-      Under [H-L] and [H-lift] — the latter proved in Q9 — $\Lpi$ is the image,
+      \textit{Metric extraction} (Theorem~5.2; conditional on [H-L] and [H-lift]).
+      Under [H-L] and the open lifting hypothesis [H-lift] (Q5b Hypothesis~4.1), $\Lpi$ is the image,
       under the Schr\"{o}dinger representation $\pi_1$, of the kinetic sector of the
       sub-Riemannian Laplacian $\Delta_H = \tilde{X}^2 + \tilde{Y}^2$ on $\Heis_3(\mathbb{R})$,
       restricted to the admissible sector.
       The effective co-metric $\geff \propto A_{\mu\nu}$ is extracted from the principal symbol
       of the resulting effective operator $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$.
+      It is $\mathrm{diag}(-\Atau, \AH, \AH, 0)$ in the left-invariant frame: it has rank three,
+      the central slot is empty and no term of lower differential order fills it, so a
+      non-degenerate co-metric requires a new operator (open problem Q5b-O2).
 
-      \textit{Lorentzian signature} (Theorem~6.1; conditional on Theorem~5.2).
-      The Born--Infeld admissibility constraint forces signature $(-, +, +, +)$ by exclusion:
-      Riemannian signature is excluded by the finite-capacity bound of A4; ultra-hyperbolic
-      signature fails to admit a globally well-posed initial value problem; degenerate
-      signature is excluded by sub-principal completion; parabolic signature implies a
-      characteristic direction incompatible with monotonic projective ordering.
+      \textit{Lorentzian signature} (Theorem~6.1; conditional on Theorem~5.2 and on [H-hyp$_{\mathrm{red}}$]).
+      Since the co-metric has rank three, the hyperbolicity hypothesis [H-hyp] of the companion
+      capacity analysis cited by Q5b cannot be applied to $\Leff$ itself; it is applied to the
+      reduction $L_{\mathrm{red}} = -\Atau\partial_\tau^2 + \AH(\partial_x^2 + \partial_y^2)$ of
+      $\Leff$ to functions independent of the central variable.
+      This is [H-hyp$_{\mathrm{red}}$]: $L_{\mathrm{red}}$ is second order in $\tau$, its principal symbol
+      is non-degenerate, and its propagation has a finite characteristic cone with $\tau$ as the
+      single ordering direction.
+      The hypothesis is explicit; it is not derived from the Born--Infeld capacity bound, which
+      alone does not force hyperbolicity.
+      In homogeneous and quasi-isotropic admissible regimes and under [H-hyp$_{\mathrm{red}}$], the
+      non-degenerate block $(-\Atau, \AH, \AH)$ has signature $(-,+,+)$ with $\tau$ time-like:
+      definite forms are excluded by the finite-cone clause, a spatial time-like direction by the
+      ordering clause, and degenerate or parabolic symbols by the non-degeneracy clause.
+      The signs of $\Leff$ are stipulated, not derived; the theorem records that they are the
+      only ones compatible with a finite characteristic cone ordered by $\tau$ (Q5b Remark~6.2).
+      A diagonal extension $\mathrm{diag}(-\Atau, \AH, \AH, A_z)$ with $A_z > 0$ would have
+      signature $(-,+,+,+)$; constructing such an extension is the open problem Q5b-O2.
 
-      After normalising the maximal admissible propagation speed to $c = 1$, the effective
-      metric is fixed to $\geff = \mathrm{diag}(-1, +1, +1, +1)$ in the homogeneous isotropic
+      After normalising the maximal admissible propagation speed to $c = 1$, the non-degenerate
+      block is proportional to $\mathrm{diag}(-1, +1, +1)$ in the homogeneous isotropic
       regime.
 
     \subsection{Effective spacetime output: Q6b}
@@ -327,11 +375,16 @@ takes the metric established here as its starting point.
 
       Q6b closes the chain $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ under the Q5a--Q5b
       hypotheses.
-      With [H-lift] proved in Q9, the results of Q6b are unconditional with respect to [H-lift].
-      The remaining conditionality is carried by the spatial limit hypothesis [H-L]
+      Since Q6b inherits the metric of Q5b Theorem~5.2, its results are conditional on the open
+      lifting hypothesis [H-lift]; Q9 does not discharge it (Section~\ref{sec:q7q11}).
+      Its Schwarzschild and Einstein statements also require a non-degenerate four-dimensional
+      Lorentzian metric, that is, a supplied rank-four extension of the rank-three co-metric,
+      whose construction Q6b itself assigns to the open problem Q5b-O2; they inherit the
+      signature hypothesis [H-hyp$_{\mathrm{red}}$] of Q5b Theorem~6.1.
+      The further conditionality is carried by the spatial limit hypothesis [H-L]
       (Q5b version 2.0), which Q5a version 3.0 shows to fail for the published normalisation
-      and its common scalar rescalings; the closure of [H-w] (W1) applies to a component of the
-      withdrawn framework, while [H-E1] and [C] are not closed by the finite-rank route of
+      and its common scalar rescalings; [H-w], a component of the withdrawn framework, is open
+      (W1 version 2.0.1), while [H-E1] and [C] are not closed by the finite-rank route of
       Q5a-O2.
 
       \begin{remark}[Status of Q6b]
@@ -345,88 +398,144 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
     \subsection{Spatial, vertical, horizontal, and temporal coefficients: Q7--Q11}
       \label{sec:q7q11}
 
-      Papers Q7--Q11 determine the four numerical entries of the effective metric by distinct
-      representation-theoretic arguments, all converging to the same value $A = 2$.
+      Papers Q7--Q11 examine what representation theory and fibre uniformity can contribute to
+      the coefficients of the effective co-metric.
+      None of them derives a coefficient value.
+      The $\su(2)$ Casimir acts as $2 \cdot \mathrm{Id}$ on the spin-one module for generators
+      normalised by $[J_1, J_2] = iJ_3$, but the invariant forms on that module form one ray,
+      the Casimir form is the point of that ray fixed by this normalisation, and rescaling the
+      generators by $\kappa$ multiplies it by $\kappa^2$ (Q8 Lemma~4.1).
 
-      \textbf{Q7}~\cite{Beau2026q7} establishes three structural results.
-      First, $\su(2) \not\cong \heis_3(\mathbb{R})$ as Lie algebras, so the bridge
-      $\phi: H_{\mathrm{eff}} \to W_{\mathrm{sp}}$ operates at the representation level.
-      Second, the effective projection space $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ carries
-      the unique irreducible three-dimensional $\su(2)$-module (from O29).
-      The three spatial dimensions are the representation-theoretic image of $\Im\mathbb{H}
-  \cong \su(2)$, confirming the causal direction: $\Sigma_c(n_3) = 3 \Rightarrow
-  \dim \Im\mathbb{H} = 3 \Rightarrow$ three spatial directions.
-      Third, the bridge $\phi$ is unique up to positive scalar (Rigidity Lemma, Q7~Lemma~4.3),
-      so the metric coefficients are uniquely determined.
-      The no-cross-terms condition $k_X k_Z = k_Y k_Z = 0$ is proved analytically
-      (Proposition~6.1).
+      \textbf{Q7}~\cite{Beau2026q7} (version 2.0) states what an equivariant bridge would
+      require and proves three requirements.
+      First, $\su(2) \not\cong \heis_3(\mathbb{R})$ as Lie algebras (Q7 Proposition~3.1), so a
+      bridge can operate only at the representation level.
+      Second, under the identification hypothesis [ID], which is supplied and not derived (O29
+      identifies no such structure), the effective projection space is the spin-one module
+      $\Sym^2(V_\rho)$, the unique irreducible three-dimensional $\su(2)$-module (Q7
+      Proposition~4.1).
+      Third, under an adjoint action [ACT] on the spatial sector, which no source supplies, an
+      equivariant map $\Sym^2(V_\rho) \to W_{\mathrm{sp}} \otimes_\mathbb{R} \mathbb{C}$ is zero or
+      an isomorphism, unique up to one non-zero complex scalar (Q7 Lemma~4.3); nothing excludes
+      the zero map or makes the scalar real and positive, so no metric coefficient is determined.
+      The reading of the three directions of $\Im\mathbb{H} \cong \su(2)$ as spatial is part of
+      that missing bridge (Section~\ref{sec:inputs}).
+      The commutation $[F_c, L_{\mathrm{Weil}}] = 0$ holds (Q7 Proposition~6.1), but its
+      application to the O25 data is withdrawn, and no statement about cross terms of the
+      principal symbol of $\Leff$ is established.
+      The former numerical coefficients are compressions of the discrete Weil Laplacian onto pure
+      Fourier modes: the central value $2$ is the flat-mode Rayleigh quotient $4 - 2 - 0$, which
+      is not normalisation-invariant and carries no evidential weight, and the horizontal value
+      is $4 - 2\cos(2\pi k/q)$ for the mode index selected by the pipeline (Q7 Remark~6.3).
+      The geometric target is a conjecture: a spatial construction beyond the rank-two symbol of
+      Q5b that supplies a positive rank-three form with [ACT], [INV] and [ADAPT] (Q7
+      Conjecture~4.7).
 
-      \textbf{Q9}~\cite{Beau2026q9} proves hypothesis~[H-lift] as a theorem by the method of
-      generator suppression: the modulation generator is suppressed at rate $O(q^{-1/2})$ on the
-      admissible sector, and coercivity of the limit form forces $A_H > 0$ independently of
-      bridge existence.
-      This makes Q5b Theorems~5.2 and~6.1 unconditional with respect to [H-lift].
+      \textbf{Q9}~\cite{Beau2026q9} (version 2.0) does not prove hypothesis~[H-lift].
+      It gives a sufficient condition for generator suppression: if the kinetic forms
+      Mosco-converge in a specified Hilbert-space comparison~[K] and each finite-energy limit
+      vector admits a kinetic recovery sequence on which the modulation energy vanishes~[R], the
+      modulation energy leaves the kinetic Mosco limit unchanged, and on any supplied
+      Schr\"{o}dinger fibre the limit is the free kinetic form, not the full oscillator form
+      (Q9 Theorem~1.2 and Corollary~6.1).
+      Neither [K] nor [R] is derived from the admissibility data, and the representation, the
+      admissible domain and the geometric lift remain supplied.
+      A supplied relative position-moment bound gives only an elementwise kinetic lower bound on
+      a cone (Q9 Corollary~5.2); it establishes no bridge non-obstruction.
+      Q5b Theorems~5.2 and~6.1 therefore remain conditional on [H-lift].
 
-      \textbf{Q8}~\cite{BeauQ8} establishes $\AZ = C_{\su(2)} = 2$ for the central (vertical)
-      direction via Casimir rigidity.
-      The Heisenberg commutator $[\tilde{X}, \tilde{Y}] = \tilde{Z}$ has a unique algebraic
-      source; under the equivariant bridge $\phi$, its coefficient is constrained to be
-      proportional to the unique $\su(2)$-invariant quadratic form on $\Sym^2(V_\rho)$, namely
-      the Casimir $C_{\su(2)} = 2 \cdot \mathrm{Id}$.
-      The normalisation is fixed with no free scalar.
-      This closes Q5b open problem O2.
+      \textbf{Q8}~\cite{BeauQ8} (version 2.0) proves that the Heisenberg commutator
+      $[\tilde{X}, \tilde{Y}] = \tilde{Z}$ does not supply a central coefficient: the principal
+      symbol of $-\Delta_H$ has rank two at every point, no term of lower differential order
+      changes it, and a constant central coefficient requires a term $\tilde{Z}^2$ of homogeneous
+      degree four, so that equality of the central and horizontal coefficients selects a length
+      scale (Q8 Theorem~1.1).
+      For a supplied positive rank-three target [T] invariant under the full $\su(2)$ action
+      [INV$^+$], it gives $\AH = \AZ = 2\lambda$ with $\lambda > 0$ not determined (Q8
+      Proposition~4.2); the Casimir fixes the normalisation of one invariant form, not a
+      coefficient.
+      No value of $\AZ$ is derived: a value would require a dimensionful datum of the
+      construction, obtained independently of $\AH$ (Q8, Section~6.3).
+      This does not close open problem Q5b-O2: the argument concerns a supplied positive
+      rank-three form invariant under the full $\su(2)$ action of the spin-one module, and it
+      does not construct the rank-four extension, whose central entry requires a new operator
+      (Q5b Remark~5.4; Q5b-O2 open).
 
-      \textbf{Q10}~\cite{Beau2026q10} proves $\AH \to 2$ as $q \to \infty$ under the O-series
-      spectral universality hypothesis~[U].
-      The argument runs: character-independence of the admissibility weights forces
-      $\su(2)$-isotropy of the effective quadratic form on $H_{\mathrm{eff}} = \Sym^2(V_\rho)$;
-      the unique $\su(2)$-invariant quadratic form on this spin-1 module has eigenvalue 2
-      (Casimir).
-      Numerical confirmation from the O25 campaign gives $|A_H(q) - 2| \approx 0.264 q^{-0.44}$
-      for $q \in \{61, 101, 151\}$.
+      \textbf{Q10}~\cite{Beau2026q10} (version 2.0.1) proves a stability lemma: under the O-series
+      spectral universality hypothesis~[U] with rate $\varepsilon(q) < 1$, a sector assignment
+      [W], a response law [R] and a supplied target [T],
+      $|\AH/\AZ - 1| \leq 2\varepsilon(q)/(1 - \varepsilon(q))$, and an absolute value follows
+      only from a separately supplied scale [S] (Q10 Theorem~1.1).
+      These inputs are named and not supplied, [U] is open, and no value of $\AH$ or $\AZ$ is
+      derived; invariance fixes an invariant form only up to a positive factor, so the Casimir
+      value 2 determines no coefficient.
+      The former numerical fit $|A_H(q) - 2| \approx 0.264\,q^{-0.44}$ is withdrawn: for the
+      stored pure Fourier modes $A_H - 2 = 2(1 - \cos(2\pi k/q))$, a property of the
+      mode-selection rule (Q7 version 2.0).
 
-      \textbf{U1}~\cite{Beau2026u1} proves hypothesis~[U] with rate $\varepsilon(q) = O(q^{-1/2})$
-      from the Weil-generator Lipschitz bound and the BFS--Carnot--Carath\'{e}odory convergence.
-      This closes [U] as a theorem rather than a structural assumption.
+      \textbf{U1}~\cite{Beau2026u1} (version 2.0) withdraws its former proof of~[U] and proves an
+      obstruction: for an odd prime $q$, the multiplication generators at any two distinct
+      central characters are at operator distance exactly $2\cos(\pi/2q)$, so no modulus of
+      continuity in the character follows from individual generators, and the summed operator
+      has no uniform modulus either.
+      Hypothesis~[U], its rate and any identification of $\AH$ are open.
 
-      \textbf{Q11}~\cite{Beau2026q11} closes the sole remaining open coefficient $\Atau$.
-      The cascade increment operator $T$ internalises no new irreducible representation; by
-      Schur's lemma, the $\tau$-sector carries the trivial $\SU(2)$-representation and the
-      temporal quadratic form must be $\SU(2)$-invariant.
-      Since $T$ is the same cascade that fixes the spatial bridge normalisation (Q8), no
-      independent normalisation arises: $\Atau = C_{\su(2)} = 2$.
-      This gives the isotropic Lorentzian co-metric:
+      \textbf{Q11}~\cite{Beau2026q11} (version 2.0) determines what invariance under a spatial
+      $\SU(2)$ action can contribute to the temporal coefficient.
+      Every invariant symmetric bilinear form on the cotangent fibre is
+      $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$ with $\alpha$ and $\beta$ independent: invariance
+      excludes mixed temporal--spatial terms but fixes no ratio, and a spatial normalisation
+      yields no value of $\Atau$ (Q11 Theorem~1.1).
+      For a supplied full-rank extension satisfying [T] and [INV$^+$] of Q8, invariant under
+      [ACT$_\tau$] and with a negative ordering term, the co-metric in an adapted frame is
       \begin{equation}
         \label{eq:metric}
-        \geff = 2\eta^{\mu\nu},
-        \qquad \eta = \mathrm{diag}(-1, +1, +1, +1).
+        \geff = \mathrm{diag}(-\Atau, 2\lambda, 2\lambda, 2\lambda),
+        \qquad \Atau > 0,\ \lambda > 0 \text{ independent},
       \end{equation}
-      The conformal factor of 2 is not a choice of units; it is the eigenvalue of the $\su(2)$-Casimir
-      on the spin-1 module $\Sym^2(V_\rho)$, governing all four metric components uniformly.
-      After absorbing $\Omega^2 = 2$ into the normalisation of the propagation speed, the
-      effective metric is exactly Minkowski.
+      non-degenerate of rank four and of signature $(-,+,+,+)$; rescaling $\tau$, a choice of
+      temporal unit, turns it into $2\lambda\,\eta^{\mu\nu}$ with
+      $\eta = \mathrm{diag}(-1, +1, +1, +1)$ (Q11 Corollary~6.1).
+      The construction of such an extension is the open problem Q5b-O2, and Q5b Theorem~5.2
+      gives rank three.
+      The overall scale is free: setting $\AH = 2$ or $\Atau = 2$ is a choice of units, not a
+      consequence of invariance (Q11).
+      The missing element is one datum coupling the temporal and spatial normalisations, such as
+      the step $\Delta\tau$ expressed in spatial units.
 
-    \subsection{Closure papers: W1 and H2}
+    \subsection{Former-framework papers: W1 and H2}
       \label{sec:closure}
 
-      \textbf{W1}~\cite{Beau2026w1} proves hypothesis~[H-w] (convergence of the admissibility
-      weights $a_q(s) \to A > 0$) as a structural consequence of the fibre-invariance of
-      admissible observables, made quantitative by U1.
-      These closures apply to the framework of Q5a versions up to 2.1, withdrawn in
-      version 3.0; they are consumed as components of [H-F].
+      \textbf{W1}~\cite{Beau2026w1} (version 2.0.1) withdraws its former proof of
+      hypothesis~[H-w] (convergence of the admissibility weights $a_q(s) \to A > 0$), which
+      imported a relative profile estimate never supplied by U1.
+      It retains a conditional summation inequality for a separately defined partial-sum proxy,
+      which does not prove convergence of the actual weights of Q5a; [H-w] remains open.
+      [H-w] belongs to the framework of Q5a versions up to 2.1, withdrawn in version 3.0, and is
+      consumed as a component of [H-F].
 
       \textbf{H2}~\cite{Beau2026h2} proves hypothesis~[H2] (strong convergence of the rescaled
       Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative
       Poisson aliasing lemma and a discrete Sobolev identity.
-      Together with Q5a-O2, H2 completes the closure of all hypotheses of that framework on
-      the admissible sector; the framework itself is no longer established (Q5a version 3.0),
-      and the residual conditionality of the chain is [H-L].
+      With [H-w] open and [H-E1] and [C] not closed by the finite-rank route of Q5a-O2, the
+      hypotheses of that framework are not all closed, and the framework itself is no longer
+      established (Q5a version 3.0),
+      and the residual conditionality of the chain is [H-L], together with [H-lift] from the
+      metric extraction onward.
 
       \begin{table}[ht]
         \centering
         \caption{Summary of constituent papers by internal phase.
         Status: P = proved; S = structural; C = conditional on the unestablished spatial
-        limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0).}
+        limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0); C$^{\dagger}$ = conditional on [H-L] and on the
+        open lifting hypothesis [H-lift] (Q5b 2.2.1, Hypothesis~4.1); C$^{\ddagger}$ adds the
+        hyperbolicity hypothesis [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem~6.1);
+        C$^{\dagger}$/C$^{\ddagger}$ = C$^{\dagger}$ for the co-metric, C$^{\ddagger}$ for the signature;
+        $^{\ast}$ = additionally presupposes a supplied rank-four extension of the co-metric
+        (Q5b-O2, open); $\geff \propto \eta^{\mu\nu}$ further requires the invariance hypotheses of
+        Q11 Corollary~6.1, and its overall scale is free;
+        P$_{\mathrm{s}}$ = proved only under supplied inputs named in Section~\ref{sec:q7q11},
+        with no coefficient value derived.}
         \label{tab:papers}
         \renewcommand{\arraystretch}{1.2}
         \begin{tabular}{@{}lllll@{}}
@@ -435,10 +544,10 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
           \midrule
           Discrete-to-continuum & Q5a, Q5a-O2, H2 & Fourier window; no-go; $\Lpi \to$ [H-L] & C \\
           Dimensional promotion & Q5b & $\Dhom = 4$; Carnot convergence & S \\
-          Metric extraction & Q5b + Q9 & $\geff \propto A_{\mu\nu}$; signature $(-, +, +, +)$ & C \\
-          Coefficient determination & Q7, Q8, Q10, U1 & $\AZ = \AH = 2$ & P/S \\
-          Metric closure & Q11, W1 & $\Atau = 2$; $\geff = 2\eta^{\mu\nu}$ & S/C \\
-          Integrative output & Q6b & $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ & C \\
+          Metric extraction & Q5b & rank-3 $\geff \propto A_{\mu\nu}$; block $(-, +, +)$ & C$^{\dagger}$/C$^{\ddagger}$ \\
+          Coefficient determination & Q7, Q8, Q10, U1 & $\AH = \AZ = 2\lambda$, $\lambda$ free & P$_{\mathrm{s}}$ \\
+          Metric closure & Q11 & $\Atau$ free; $\geff \propto \eta^{\mu\nu}$$^{\ast}$ & P$_{\mathrm{s}}$ \\
+          Integrative output & Q6b & $\Pi_q \to \Leff \to \geff \to G_{\mu\nu}$ & C$^{\ddagger\ast}$ \\
           \bottomrule
         \end{tabular}
       \end{table}
@@ -482,20 +591,23 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
 
     \begin{table}[ht]
       \centering
-      \caption{Principal outputs and downstream consumers.}
+      \caption{Principal outputs and downstream consumers.
+      Status letters as in Table~\ref{tab:papers}; C$^{\ddagger}$ adds the hyperbolicity hypothesis
+      [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem~6.1); $^{\ast}$ and
+      P$_{\mathrm{s}}$ as in Table~\ref{tab:papers}; O = open (Section~\ref{sec:open-hyp}).}
       \label{tab:outputs}
       \renewcommand{\arraystretch}{1.3}
       \begin{tabular}{@{}p{5.5cm}p{4.5cm}l@{}}
         \toprule
         Output & Consumer & Status \\
         \midrule
-        $\geff = 2\eta^{\mu\nu}$ & Gravity, Q12, Q13 & S (Q11) \\
-        Lorentzian signature $(-, +, +, +)$ & All Branch~III & P (Q5b + Q9) \\
+        $\geff \propto \eta^{\mu\nu}$$^{\ast}$, scale free & Gravity, Q12, Q13 & P$_{\mathrm{s}}$ (Q11) \\
+        Signature $(-, +, +)$ of the non-degenerate block & All Branch~III & C$^{\ddagger}$ (Q5b) \\
         $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ & Q6b, Gravity, Q12 & C \\
-        $H_{\mathrm{eff}} = \Sym^2(V_\rho) \cong \mathbb{C}^3$ & Q7, Q8, Q14 & P \\
-        Three spatial directions from $\Im\mathbb{H}$ & Q7, gauge notes & P \\
-        Schwarzschild exterior metric & Q6b & C \\
-        Einstein equations as consistency conditions & Q6b, Gravity & C \\
+        $H_{\mathrm{eff}} = \Sym^2(V_\rho) \cong \mathbb{C}^3$ (under [ID]) & Q7, Q8, Q14 & P$_{\mathrm{s}}$ \\
+        Three spatial directions from $\Im\mathbb{H}$ & Q7, gauge notes & O (Q7 Conj.~4.7) \\
+        Schwarzschild exterior metric & Q6b & C$^{\ddagger\ast}$ \\
+        Einstein equations as consistency conditions & Q6b, Gravity & C$^{\ddagger\ast}$ \\
         $\ell_{\mathrm{sp}}$ (spectral length scale) & Gravity~\cite{Beau2026h} & S \\
         \bottomrule
       \end{tabular}
@@ -515,35 +627,44 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         stratification of $G_q$ converges to the Carnot--Carath\'{e}odory sphere foliation of
         $\Heis_3(\mathbb{R})$ in the pre-saturation regime.
 
-        \item \textit{$[\text{H-lift}]$} (Q9 Theorem~1.2): the admissibility filter concentrates
-        on the kinetic sector of $d\pi_1(\Delta_H)$ at rate $O(q^{-1/2})$, making $\Lpi$ the
-        kinetic shadow of $\Delta_H$ without independent hypothesis; conditional on the frozen
-        framework [H-F] (Q9 version 1.1).
+        \item \textit{Conditional kinetic limit} (Q9 Theorem~1.2 and Corollary~6.1): under the
+        premises [K] and [R], generator suppression leaves the kinetic Mosco limit unchanged and,
+        on a supplied Schr\"{o}dinger fibre, the limit is the free kinetic form.
+        This does not discharge [H-lift] (Section~\ref{sec:open-hyp}).
 
-        \item \textit{Metric extraction} (Q5b Theorem~5.2, conditional on [H-L]; lifting step
-        via Q9): the effective co-metric $\geff \propto A_{\mu\nu}$ is extracted from the
-        principal symbol of $\Leff$ under [H-L].
+        \item \textit{Metric extraction} (Q5b Theorem~5.2, conditional on [H-L] and [H-lift]):
+        the effective co-metric $\geff \propto A_{\mu\nu}$ is extracted from the
+        principal symbol of $\Leff$ under [H-L] and [H-lift].
 
-        \item \textit{Lorentzian signature} (Q5b Theorem~6.1): signature $(-, +, +, +)$ is forced by
-        the Born--Infeld admissibility constraint via exclusion of all other signature classes.
+        \item \textit{Lorentzian signature} (Q5b Theorem~6.1, conditional on [H-L], [H-lift] and
+        [H-hyp$_{\mathrm{red}}$]): the non-degenerate block of the rank-three co-metric has signature
+        $(-,+,+)$ with $\tau$ time-like; the signs are stipulated, and [H-hyp$_{\mathrm{red}}$] makes them
+        the only ones compatible with a $\tau$-ordered finite characteristic cone.
+        A diagonal extension with $A_z > 0$ would have signature $(-,+,+,+)$ (Q5b-O2, open).
 
-        \item \textit{Bridge rigidity} (Q7 Lemma~4.3): the bridge
-        $\phi: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$ is unique up to positive scalar.
+        \item \textit{Bridge requirements} (Q7 Proposition~3.1 and Lemma~4.3): $\su(2) \not\cong
+        \heis_3(\mathbb{R})$; under the supplied [ID] and [ACT], an equivariant map
+        $\Sym^2(V_\rho) \to W_{\mathrm{sp}} \otimes_\mathbb{R} \mathbb{C}$ is zero or an
+        isomorphism, unique up to one non-zero complex scalar.
 
-        \item \textit{No-cross-terms} (Q7 Proposition~6.1): the cross terms $k_X k_Z = k_Y k_Z = 0$
-        are proved analytically from $[\mathcal{F}_c, L_{\mathrm{Weil}}] = 0$.
+        \item \textit{Chirped-DFT commutation} (Q7 Proposition~6.1): $[F_c, L_{\mathrm{Weil}}] = 0$
+        for every odd prime $q$ and $\gcd(c, q) = 1$; no statement about cross terms of the
+        principal symbol of $\Leff$ follows.
 
-        \item \textit{$\AZ = 2$} (Q8 Theorem~1.1): Casimir rigidity of the central direction;
-        $\AZ = C_{\su(2)}|_{\Sym^2(V_\rho)} = 2 \cdot \mathrm{Id}$ with no free normalisation scalar.
+        \item \textit{Central rank obstruction and scale-free rigidity} (Q8 Theorem~1.1): the
+        commutator supplies no central coefficient; for a supplied target [T] with [INV$^+$],
+        $\AH = \AZ = 2\lambda$ with $\lambda > 0$ not determined.
 
-        \item \textit{Spectral universality [U]} (U1): $\varepsilon(q) = O(q^{-1/2})$; proved from
-        the Weil-generator Lipschitz bound.
+        \item \textit{Equidistance obstruction} (U1 version 2.0): distinct central characters
+        give multiplication generators at operator distance exactly $2\cos(\pi/2q)$; the
+        Lipschitz route to [U] is closed, and [U] is open.
 
-        \item \textit{$\AH \to 2$} (Q10 Theorem~1.1): character-independence forces
-        $\su(2)$-isotropy of the effective form; the Casimir gives value 2 in the limit.
+        \item \textit{Conditional ratio bound} (Q10 Theorem~1.1): under [U], [W], [R] and [T],
+        $|\AH/\AZ - 1| \leq 2\varepsilon/(1 - \varepsilon)$; no value of $\AH$ or $\AZ$ is
+        derived.
 
-        \item \textit{$[\text{H-w}]$} (W1): admissibility weight convergence $a_q(s) \to A > 0$
-        proved as a structural consequence of fibre-invariance, quantified by U1.
+        \item \textit{Conditional summation inequality} (W1 version 2.0.1): for a separately
+        defined partial-sum proxy of the admissibility weights; it does not prove [H-w].
 
         \item \textit{$[\text{H2}]$} (H2): strong convergence of rescaled Weil generators via
         Poisson aliasing lemma and discrete Sobolev identity.
@@ -552,44 +673,54 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         finite-rank route; the $q^{-1}$ coercivity scale is ruled out and the published form has
         zero-form Mosco limit on the canonical filtration.
 
-        \item \textit{$\Atau = 2$} (Q11 Theorem~1.1): temporal Casimir rigidity; cascade
-        internalization lemma, Schur rigidity, and Q8 normalisation close $\Atau$.
+        \item \textit{Temporal independence} (Q11 Theorem~1.1): invariant forms are
+        $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$ with $\alpha$, $\beta$ independent; no mixed
+        terms, and no value of $\Atau$ follows from a spatial normalisation.
 
-        \item \textit{Metric closure $\geff = 2\eta^{\mu\nu}$} (Q11 Corollary~6.1): combination of
-        $\Atau = 2$ (Q11), $\AH = 2$ (Q10), $\AZ = 2$ (Q8), and Q5b Theorem~6.1.
+        \item \textit{Conditional rank-four form} (Q11 Corollary~6.1): for a supplied rank-four
+        extension satisfying [T] and [INV$^+$] of Q8, invariant under [ACT$_\tau$] and with a
+        negative ordering term (Q5b-O2 open), the co-metric is
+        $\mathrm{diag}(-\Atau, 2\lambda, 2\lambda, 2\lambda)$ with $\Atau$ and $\lambda$
+        independent, and $\geff \propto \eta^{\mu\nu}$ after rescaling $\tau$; the overall scale
+        is free.
       \end{enumerate}
 
     \subsection{Structural results}
       \label{sec:structural}
 
       \begin{enumerate}
-        \item \textit{$H_{\mathrm{eff}} = \Sym^2(V_\rho)$} (Q7 Proposition~4.1, from O29):
-        the effective projection space is the unique irreducible three-dimensional $\su(2)$-module.
+        \item \textit{Spin-one module} (Q7 Proposition~4.1): the unique irreducible
+        three-dimensional $\su(2)$-module is $\Sym^2(V_\rho)$; the identification of the effective
+        projection space with it is the supplied hypothesis [ID], which O29 does not provide.
 
-        \item \textit{Three spatial dimensions from $\Im\mathbb{H}$} (Q7, O23): the three spatial
-        directions are the image of $\Im\mathbb{H} \cong \su(2)$; three-dimensionality is not
-        postulated.
+        \item \textit{Three-dimensional neutral sector} (O23): the adjoint dimension of the
+        supplied carrier is three; reading these directions as spatial is the open bridge of Q7
+        Conjecture~4.7.
 
         \item \textit{Schwarzschild exterior metric} (Q6b): flux conservation within the effective
         geometry forces the Schwarzschild metric as the unique stationary spherically symmetric
-        exterior solution; conditional on [H-L].
+        exterior solution; conditional on [H-L], [H-lift] and [H-hyp$_{\mathrm{red}}$], and on a supplied
+        rank-four extension of the co-metric (Q5b-O2, open).
 
         \item \textit{Einstein equations as consistency conditions} (Q6b): the Einstein--Hilbert
         action is identified as the spectral entropy functional of the Gravity paper; conditional
-        on [H-L].
+        on [H-L], [H-lift] and [H-hyp$_{\mathrm{red}}$], and on a supplied rank-four extension of the
+        co-metric (Q5b-O2, open).
 
-        \item \textit{$\AZ$ is not a free parameter} (Q8 §6.3): the value $\AZ = 2$ is fixed by
-        the Casimir of the unique irreducible $\su(2)$-module of dimension 3; it is a structural
-        identity, not a fitted constant.
+        \item \textit{The central coefficient carries a scale} (Q8 Proposition~5.1 and
+        Remark~5.2): a constant central coefficient requires a term of homogeneous degree four,
+        and equality of central and horizontal coefficients selects a length scale; a value of
+        $\AZ$ needs a dimensionful datum obtained independently of $\AH$ (Q8, Section~6.3).
       \end{enumerate}
 
     \subsection{Numerical evidence}
       \label{sec:numerical}
 
       \begin{enumerate}
-        \item \textit{$|A_H(q) - 2| \approx 0.264 q^{-0.44}$} (Q7, Q10): confirmed from the O25
-        campaign for $q \in \{61, 101, 151\}$; consistent with convergence to 2 with rate
-        $O(q^{-1/2})$.
+        \item \textit{Rayleigh-quotient identities} (Q7 Remark~6.3): on the stored pure Fourier
+        modes of the O25 campaign, the flat-mode compression entry equals $4 - 2 - 0 = 2$ exactly
+        and by construction, and the horizontal entry equals $4 - 2\cos(2\pi k/q)$; these are
+        compressions of $L_{\mathrm{Weil}}$, not coefficients.
 
         \item \textit{Mosco tightness (Conjecture~[C])} (Q5a): spectral tail mass satisfies
         $\mathcal{E}_q(q/3)/\|f_q\|^2 < 2.1 \times 10^{-5}$ for $q \in \{29, 61, 101, 151\}$,
@@ -622,12 +753,63 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         This does not block any downstream result beyond the conditionality already carried
         by [H-L].
 
-        \item \textit{Bridge existence at finite $q$} (Q8-O1).
-        Q7 Conjecture~4.7 / Q8-O1: does an explicit $\su(2)$-equivariant isomorphism
-        $\phi_q: \Sym^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$ exist at each prime $q$,
-        not only in the asymptotic limit?
-        The programme consequences ($\AZ = 2$, $\AH \to 2$, $\Atau = 2$) are established without
-        it; this is a secondary structural open problem.
+        \item \textit{Extended spatial target} (Q7 Conjecture~4.7, Q8-O1).
+        Construct a spatial operator or effective form beyond the rank-two symbol of Q5b that
+        supplies a positive rank-three form with [ACT], [INV] and [ADAPT] and a central term of
+        homogeneous degree four, and relate it to the horizontal geometry of Q5b.
+        No coefficient consequence is established without it.
+
+        \item \textit{Lifting hypothesis [H-lift]} (Q5b 2.2.1, Hypothesis~4.1).
+        The identification of $\Lpi$ with $A$ times the kinetic sector of $-d\pi_1(\Delta_H)$
+        under a supplied Schr\"{o}dinger representation is open.
+        Q9 version 2.0 gives sufficient conditions [K] and [R] for a kinetic Mosco limit and
+        states that its results do not discharge [H-lift]; neither premise is derived from the
+        admissibility data.
+        Q5b Theorems~5.2 and~6.1, and every result consuming the extracted metric, are
+        conditional on it.
+
+        \item \textit{Spectral universality [U]} (Q10 Definition~3.1; U1 version 2.0).
+        Open; the Lipschitz route is obstructed by the equidistance of distinct central
+        characters, and the inputs [W], [R], [T] and [S] of Q10 are not supplied either.
+
+        \item \textit{Weight convergence [H-w]} (W1 version 2.0.1).
+        Open; the former proof is withdrawn.
+
+        \item \textit{Spatial scale and full invariance} (Q8-O2, Q8-O3).
+        Derive [INV$^+$] for an extended target, or show that it fails, and identify a
+        dimensionful datum fixing $\AZ$ independently of $\AH$.
+
+        \item \textit{Temporal-to-spatial ratio} (Q11; Q5b-O3).
+        One datum coupling the temporal and spatial normalisations, such as the step $\Delta\tau$
+        expressed in spatial units; invariance does not supply it.
+      \end{enumerate}
+
+    \subsection{Withdrawn attributions}
+      \label{sec:withdrawn}
+
+      Earlier versions of this note recorded the following as results; the current versions of
+      their sources withdraw them, and they are not used above.
+      \begin{enumerate}
+        \item $\AZ = C_{\su(2)} = 2$ ``with no free normalisation scalar'' and ``$\AZ$ is not a
+        free parameter'' (attributed to Q8): Q8 version 2.0 gives $\AH = \AZ = 2\lambda$ with
+        $\lambda$ free and derives no value.
+        \item $\AH \to 2$ (attributed to Q10): Q10 version 2.0.1 bounds a ratio under supplied
+        inputs and derives no value.
+        \item A proof of [U] with rate $O(q^{-1/2})$ (U1 version 1): withdrawn in U1 version 2.0.
+        \item A proof of [H-w] (W1 version 1): withdrawn in W1 version 2.0.1.
+        \item $\Atau = 2$ by temporal Casimir rigidity (attributed to Q11): Q11 version 2.0 shows
+        that invariance leaves $\Atau$ free.
+        \item The closure $\geff = 2\eta^{\mu\nu}$ with a conformal factor ``not a choice of
+        units'': the scale is free and setting it to 2 is a choice of units (Q8, Q11).
+        \item A bridge ``unique up to positive scalar'' fixing the coefficients, and analytic
+        vanishing of the cross terms $k_X k_Z$, $k_Y k_Z$ (attributed to Q7): Q7 version 2.0
+        gives a complex scalar, does not exclude the zero map, and withdraws the cross-term
+        application.
+        \item The numerical fit $|A_H(q) - 2| \approx 0.264\,q^{-0.44}$ (attributed to Q7 and
+        Q10): withdrawn in Q7 version 2.0 as a property of the mode-selection rule.
+        \item Three spatial dimensions as the image of $\Im\mathbb{H}$, ``not postulated''
+        (attributed to Q7 and O23): the identification is supplied, and the spatial reading is the
+        open bridge.
       \end{enumerate}
 
   \section{Open Deliverables}
@@ -643,12 +825,12 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
     statement and does not provide a spatial continuum.
     This is the open content of Q5 and the principal obstruction of the sub-programme.
 
-    \textbf{Open deliverable 1: Bridge existence at finite $q$.}
-    The asymptotic results ($\AZ = \AH = \Atau = 2$) and the metric closure
-    $\geff = 2\eta^{\mu\nu}$ are established in the $q \to \infty$ limit.
-    The finite-$q$ equivariant bridge $\phi_q$ — required for a fully explicit
-    representation-level identification at each prime — remains an open structural problem.
-    Its resolution would strengthen the narrative but would not change any published result.
+    \textbf{Open deliverable 1: an extended spatial target and the coefficient data.}
+    Constructing the extended target of Q7 Conjecture~4.7 and Q8-O1, which would also supply
+    the rank-four extension of Q5b-O2, and the dimensionful data that would fix the spatial
+    scale (Q8-O3) and the temporal-to-spatial ratio (Q11).
+    No coefficient value is established in the meantime; an equivariant bridge at finite $q$ is
+    part of this construction.
 
     \textbf{Open deliverable 2: [H1] on the full $L^2$ space.}
     Q5a-O2 closes [H1] on the admissible sector.
@@ -658,30 +840,40 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
   \section{Conclusion}
     \label{sec:conclusion}
 
-    The emergent geometry sub-programme derives the effective Lorentzian metric
-    $\geff = 2\eta^{\mu\nu}$ from the admissibility filter $\Pi_q$ acting on the Weil
+    The emergent geometry sub-programme organises the conditional reconstruction of an
+    effective Lorentzian metric from the admissibility filter $\Pi_q$ acting on the Weil
     representation of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
+    Its target, a co-metric $\geff \propto \eta^{\mu\nu}$, presupposes a rank-four extension that
+    is not constructed (Q5b-O2), and its overall scale is not fixed.
 
     The chain has five stages, each addressed by distinct papers: the discrete-to-continuum
     stage, now the open hypothesis [H-L] after the Q5a version 3.0 withdrawal (Q5a, Q5a-O2,
     W1, H2); the dimensional promotion via Carnot geometry (Q5b);
-    the metric extraction and signature selection (Q5b + Q9); the determination of the metric
-    coefficients $\AZ$, $\AH$, $\Atau$ via Casimir rigidity (Q7--Q11, U1); and the
-    assembly into the effective spacetime statement (Q6b).
-    All four metric coefficients equal 2, a single representation-theoretic datum: the
-    eigenvalue of the $\su(2)$-Casimir on the spin-1 module $\Sym^2(V_\rho)$.
+    the metric extraction and signature selection (Q5b, conditional on [H-lift]); the analysis of
+    the metric coefficients $\AZ$, $\AH$, $\Atau$ (Q7, Q8, Q10, Q11, U1), which derives no
+    coefficient value; and the assembly into the effective spacetime statement (Q6b).
+    On a supplied rank-four extension with the invariance hypotheses of Q8 and Q11, the spatial
+    coefficients are equal and the co-metric is proportional to $\eta^{\mu\nu}$ after a choice
+    of temporal unit; the common spatial scale and the ratio of the temporal and spatial
+    normalisations are free.
+    The value 2 is the eigenvalue of the $\su(2)$ Casimir on the spin-one module
+    $\Sym^2(V_\rho)$ in one normalisation of the generators, not a coefficient.
 
-    Under [H-L], the sub-programme closes the reconstruction problem: $\geff$ is not
-    postulated but derived, and the Lorentzian signature is not postulated but excluded by
-    elimination.
-    Without [H-L], the geometric and algebraic stages stand, and the discrete-to-continuum
-    stage is open: this is the current state of Q5.
-    The value of the conformal factor is not fitted but forced by the Casimir.
+    Under [H-L] and [H-lift], Q5b extracts a rank-three co-metric; under [H-hyp$_{\mathrm{red}}$] in
+    addition, its non-degenerate block has signature $(-,+,+)$, the stipulated signs being the
+    only ones compatible with a $\tau$-ordered finite characteristic cone (Q5b Remark~6.2).
+    The reconstruction problem is not closed: the rank-four extension is open (Q5b-O2), and no
+    metric coefficient value is derived.
+    Without [H-L], the geometric convergence results and the algebraic statements of Q7 and Q8
+    stand, and the discrete-to-continuum stage is open: this is the current state of Q5.
+    The overall scale of the co-metric and the temporal-to-spatial ratio require data that no
+    source supplies (Q8, Q11).
 
     This note does not address the dynamics of $\geff$.
     The question of why the effective metric satisfies the Einstein equations is handled by the
-    spectral gravity sub-programme (Presentation Note~4), which takes $\geff = 2\eta^{\mu\nu}$
-    as its starting point.
+    spectral gravity sub-programme (Presentation Note~4), which takes an effective metric
+    $\geff \propto \eta^{\mu\nu}$ as its starting point, a target subject to the reservations
+    above.
 
     \newpage
     \bibliographystyle{plain}

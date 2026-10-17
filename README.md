@@ -22,10 +22,14 @@ growing toric Fourier window, the published form converges to the zero form, and
 scalar normalisation produces a non-trivial toric differential operator. The spatial limit
 operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0), every metric
 result is conditional on it, and Q5 is open. The geometric convergence results (Carnot,
-$D_{\mathrm{hom}}=4$) and the algebraic coefficient rigidities are independent of [H-L].
+$D_{\mathrm{hom}}=4$) are independent of [H-L]. No metric coefficient value is established:
+invariance fixes the shape of an invariant spatial form and leaves its scale free (Q8), leaves the
+temporal coefficient independent of the spatial one (Q11), and the isotropy route of Q10 rests on
+inputs that are not supplied.
 
-Under [H-L], the sub-programme removes the postulate of a background spacetime: the effective
-metric is a forced consequence of admissibility, not an input. This note concerns the **reconstruction**
+The sub-programme aims to remove the postulate of a background spacetime by reconstructing the
+effective metric from admissibility rather than postulating it; the reconstruction is at present
+conditional and incomplete (a rank-three co-metric, with the rank-four extension open as Q5b-O2). This note concerns the **reconstruction**
 of the metric only; its dynamics (the Einstein equations) belong to the spectral gravity
 sub-programme.
 
@@ -41,7 +45,14 @@ L_{\mathrm{eff}}
 \;\Longrightarrow\;
 g^{\mu\nu}
 \;\Longrightarrow\;
-g^{\mu\nu} = 2\eta^{\mu\nu}$.
+g^{\mu\nu} \propto \eta^{\mu\nu}$.
+
+The last link presupposes a rank-four extension of the rank-three co-metric of Q5b, which is not
+constructed (open problem Q5b-O2); it holds only for an extension satisfying the hypotheses of Q11
+Corollary 6.1 ([T] and [INV$^+$] of Q8, [ACT$_\tau$] invariance and a negative ordering term), after rescaling $\tau$, with an
+overall scale that no source fixes. A rank-four Lorentzian extension alone does not suffice: the
+extension $\mathrm{diag}(-1,1,1,3)$ of the Q5b block has central entry different from the horizontal one,
+and no rescaling of $\tau$ makes it proportional to $\eta^{\mu\nu}$.
 
 Five conceptually distinct stages, each resolved by a distinct group of papers:
 
@@ -52,15 +63,27 @@ Five conceptually distinct stages, each resolved by a distinct group of papers:
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
    homogeneous dimension $D_{\mathrm{hom}} = 4$ promote $L_\Pi$ to a 4D operator $L_{\mathrm{eff}}$
    on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ (Q5b).
-3. **Metric extraction** — the effective co-metric $g^{\mu\nu} \propto A_{\mu\nu}$ and Lorentzian
-   signature $(-,+,+,+)$ from the principal symbol of $L_{\mathrm{eff}}$ (Q5b, unconditional via Q9).
-4. **Coefficient determination** — $A_Z = A_H = 2$ via Casimir rigidity and spectral universality
-   (Q7, Q8, Q10, U1).
-5. **Metric closure** — $A_\tau = 2$ via temporal Casimir rigidity, giving $g^{\mu\nu} = 2\eta^{\mu\nu}$
-   (Q11; W1 closes [H-w]).
+3. **Metric extraction** — a rank-three effective co-metric $g^{\mu\nu} \propto A_{\mu\nu}$, with empty
+   central slot, from the principal symbol of $L_{\mathrm{eff}}$, and signature $(-,+,+)$ on its non-degenerate
+   block; the signs are stipulated, and [H-hyp$_{\mathrm{red}}$] makes them the only ones compatible with a
+   $\tau$-ordered finite characteristic cone. A diagonal extension with $A_z > 0$ would have signature
+   $(-,+,+,+)$; constructing it is the open problem Q5b-O2 (Q5b; co-metric conditional on [H-L] and the open lifting
+   hypothesis [H-lift], signature additionally on [H-hyp$_{\mathrm{red}}$]; Q9 version 2.0 gives sufficient conditions for a kinetic Mosco limit and does not
+   discharge [H-lift]).
+4. **Coefficient determination** — no coefficient value is derived. Under the supplied
+   identification [ID] and action [ACT], an equivariant bridge is zero or an isomorphism, unique up
+   to one complex scalar (Q7); for a supplied positive rank-three target with full
+   $\mathfrak{su}(2)$-invariance, $A_H = A_Z = 2\lambda$ with $\lambda > 0$ free (Q8); Q10 bounds the
+   ratio $A_H/A_Z$ under [U] and three further inputs that are not supplied; [U] is open (U1 2.0).
+5. **Metric closure** — invariance leaves $A_\tau$ independent of the spatial scale (Q11). For a
+   supplied rank-four extension satisfying [T] and [INV$^+$] of Q8, invariant under [ACT$_\tau$] and
+   with a negative ordering term (Q11 Corollary 6.1; Q5b-O2 open), the co-metric is
+   $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, and $g^{\mu\nu} \propto \eta^{\mu\nu}$ after
+   rescaling $\tau$; the overall scale is free. [H-w] is open (W1 2.0.1).
 
-All four metric coefficients equal **2** — a single representation-theoretic datum: the
-eigenvalue of the $\mathfrak{su}(2)$-Casimir on the spin-1 module $\mathrm{Sym}^2(V_\rho)$.
+The value 2 is the eigenvalue of the $\mathfrak{su}(2)$ Casimir on the spin-one module
+$\mathrm{Sym}^2(V_\rho)$ in one normalisation of the generators; it fixes no coefficient, and setting a
+coefficient to 2 is a choice of units (Q8, Q11).
 
 ## Position in the Programme
 
@@ -70,8 +93,8 @@ $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and the Born--Infeld admissibility con
 Presentation Note 1 (spectral admissibility) the supplied inputs that the admissible sector is
 carried by the spin-$\tfrac12$ carrier $V_\rho \cong \mathbb{C}^2$ and that $\Sigma_c(n_3) = 3$
 (a supplied selection rule, with $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ the adjoint
-dimension of that carrier). It produces the effective Lorentzian metric used
-throughout Branch III.
+dimension of that carrier). It aims to produce the effective Lorentzian metric used
+throughout Branch III; it currently yields, conditionally, a rank-three co-metric.
 
 ## Constituent Papers
 
@@ -81,20 +104,27 @@ The note maps **twelve** constituent papers, organised by internal phase:
 |---|---|---|---|
 | Discrete-to-continuum | Q5a, Q5a-O2, H2 | Fourier window; no-go; $L_\Pi \to$ [H-L] | C |
 | Dimensional promotion | Q5b | $D_{\mathrm{hom}} = 4$; Carnot convergence | S |
-| Metric extraction | Q5b + Q9 | $g^{\mu\nu} \propto A_{\mu\nu}$; signature $(-,+,+,+)$ | C |
-| Coefficient determination | Q7, Q8, Q10, U1 | $A_Z = A_H = 2$ | P/S |
-| Metric closure | Q11, W1 | $A_\tau = 2$; $g^{\mu\nu} = 2\eta^{\mu\nu}$ | S/C |
-| Integrative output | Q6b | $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$ | C |
+| Metric extraction | Q5b | rank-3 $g^{\mu\nu} \propto A_{\mu\nu}$; block $(-,+,+)$ | C$^\dagger$/C$^\ddagger$ |
+| Coefficient determination | Q7, Q8, Q10, U1 | $A_H = A_Z = 2\lambda$, $\lambda$ free | P$_{\mathrm{s}}$ |
+| Metric closure | Q11 | $A_\tau$ free; $g^{\mu\nu} \propto \eta^{\mu\nu}$$^\ast$ | P$_{\mathrm{s}}$ |
+| Integrative output | Q6b | $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$ | C$^{\ddagger\ast}$ |
 
 Status codes: **P** = proved, **S** = structural, **C** = conditional on the unestablished
-spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0).
+spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0); **C$^\dagger$** = conditional on [H-L] and on the
+open lifting hypothesis [H-lift] (Q5b 2.2.1, Hypothesis 4.1); **C$^\ddagger$** adds the hyperbolicity
+hypothesis [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem 6.1); **C$^\dagger$/C$^\ddagger$** = C$^\dagger$ for the
+co-metric, C$^\ddagger$ for the signature; **$^\ast$** = additionally presupposes a supplied rank-four extension
+of the co-metric (Q5b-O2, open); $g^{\mu\nu} \propto \eta^{\mu\nu}$ further requires the invariance hypotheses
+of Q11 Corollary 6.1, and its overall scale is free;
+**P$_{\mathrm{s}}$** = proved only under supplied inputs, with no coefficient value derived.
 
 ## Open Deliverables
 
-1. **Bridge existence at finite $q$.** The asymptotic results ($A_Z = A_H = A_\tau = 2$) and the
-   metric closure $g^{\mu\nu} = 2\eta^{\mu\nu}$ hold in the $q \to \infty$ limit. An explicit
-   $\mathfrak{su}(2)$-equivariant bridge $\phi_q: \mathrm{Sym}^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$
-   at each prime remains an open structural problem (no published result depends on it).
+1. **An extended spatial target and the coefficient data.** Construct the extended target of Q7
+   Conjecture 4.7 and Q8-O1, which would also supply the rank-four extension of Q5b-O2, and the
+   dimensionful data fixing the spatial scale (Q8-O3) and the temporal-to-spatial ratio (Q11). No
+   coefficient value is established in the meantime; an equivariant bridge at finite $q$ is part of
+   this construction.
 2. **Hypothesis [H1] on the full $L^2$ space.** Open; the full-space version is not needed by
    any result and is listed for completeness.
 
