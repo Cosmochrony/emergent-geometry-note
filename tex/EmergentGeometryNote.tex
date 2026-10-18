@@ -80,7 +80,8 @@
     \emph{Status revision (version 1.1).}
     Q5a version 3.0 withdraws the first link of this chain: the canonical filtration of the
     admissible fibre is exactly a growing toric Fourier window, the published admissibility
-    form converges to the zero form on it, and, under the unproved, numerically supported
+    form converges to the zero form on it (assuming uniformly bounded weights, which is
+    numerically supported but not proved), and, under the unproved, numerically supported
     hypotheses [H-depth] (diverging saturation depth) and [H-$w'$] (positive finite weight
     limits), no common scalar normalisation produces a non-trivial toric differential operator.
     The existence of the spatial limit operator $\Lpi = -A\partial_x^2$ is now the explicit,
@@ -205,9 +206,9 @@ takes the metric targeted here as its starting point.
       \;\Longrightarrow\;
       \underbrace{\Lpi = -A\partial_x^2}_{\substack{\text{1D shadow} \\ \text{(now [H-L])}}}
       \;\Longrightarrow\;
-      \underbrace{\Leff \text{ on } \mathbb{R}_\tau \times \Heis_3(\mathbb{R})}_{\substack{\text{4D effective operator} \\ \text{(Carnot, Q5b)}}}
+      \underbrace{\Leff \text{ on } \mathbb{R}_\tau \times \Heis_3(\mathbb{R})}_{\substack{\text{4D effective operator} \\ \text{(Q5b; [H-L], [H-lift],} \\ \text{supplied $\tau$ term)}}}
       \;\Longrightarrow\;
-      \underbrace{\geff \propto A_{\mu\nu}}_{\substack{\text{metric extraction} \\ \text{(Q5b, [H-lift])}}}
+      \underbrace{\geff \propto A_{\mu\nu}}_{\substack{\text{metric extraction} \\ \text{(Q5b;} \\ \text{[H-L], [H-lift])}}}
       \;\Longrightarrow\;
       \underbrace{\geff \propto \eta^{\mu\nu}}_{\substack{\text{metric closure (target)} \\ \text{(Q8, Q11)}}}.
     \end{equation}
@@ -228,7 +229,7 @@ takes the metric targeted here as its starting point.
       operator $\Lpi = -A\partial_x^2$ on $L^2(\mathbb{R})$.
       Q5a version 3.0 withdraws this derivation and leaves Q5 open: the canonical filtration
       is exactly a growing toric Fourier window, the published form converges to the zero
-      form, and, under the hypotheses [H-depth] and [H-$w'$] of Q5a Theorem~6.1, no common
+      form (assuming uniformly bounded weights), and, under the hypotheses [H-depth] and [H-$w'$] of Q5a Theorem~6.1, no common
       scalar normalisation yields a non-trivial toric differential operator.
       This link is now the explicit hypothesis [H-L] (Q5b version 2.0).
       Q5a-O2 establishes the pure-Fourier-mode structure of the pre-saturation pipeline and the
@@ -238,9 +239,13 @@ takes the metric targeted here as its starting point.
       H2 closes hypothesis~[H2] of the same framework.
 
       \item \textit{Dimensional promotion.}
-      Q5b promotes the one-dimensional $\Lpi$ to a four-dimensional effective operator
-      $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ via the Bass--Guivarc'h
-      homogeneous dimension $\Dhom = 4$ and the Carnot convergence of BFS shells.
+      The Carnot convergence of BFS shells and the Bass--Guivarc'h homogeneous dimension
+      $\Dhom = 4$ give the spatial limit the homogeneous geometry of a four-dimensional space
+      (Q5b Theorems~2.1 and~3.2; structural).
+      The four-dimensional effective operator
+      $\Leff = -\Atau\partial_\tau^2 + \AH\Delta_H$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$
+      does not follow from these results: Q5b poses it under [H-L] and [H-lift], with a supplied
+      temporal term and stipulated signs (Q5b Section~5.1 and Theorem~5.2).
 
       \item \textit{Metric extraction.}
       Q5b Theorem~5.2, conditional on [H-L] and on the open lifting hypothesis [H-lift],
@@ -291,10 +296,11 @@ takes the metric targeted here as its starting point.
       Continuum Limit}) withdraws this framework and replaces it with three established
       results: an exact identification (the canonical filtration stage is precisely the toric
       Fourier window $\mathrm{span}\{e^{2\pi i b x/q} : |b| \le n\}$), a zero-form theorem
-      (the published admissibility form converges to the zero form on this filtration, at rate
+      (assuming uniformly bounded weights, which is numerically supported but not proved, the
+      published admissibility form converges to the zero form on this filtration, at rate
       $q^{-2}$), and a normalisation no-go (under a diverging saturation depth and the measured
-      weight behaviour, no common scalar normalisation of the form produces a non-trivial toric
-      differential operator).
+      weight behaviour, that is, hypotheses [H-depth] and [H-$w'$] of Q5a Theorem~6.1, no common
+      scalar normalisation of the form produces a non-trivial toric differential operator).
       The only non-trivial rescaled limit is a conditional Dirichlet operator in the rescaled
       \emph{frequency} variable, which does not provide a spatial continuum.
       Consequently, no operator $-A\partial_x^2$ on a spatial $L^2$ space is derived anywhere
@@ -321,8 +327,8 @@ takes the metric targeted here as its starting point.
     \subsection{Carnot geometry and Lorentzian signature: Q5b}
       \label{sec:q5b}
 
-      \textbf{Q5b}~\cite{Beau2026q5b} delivers three results that together promote the
-      one-dimensional shadow $\Lpi$ to a four-dimensional effective geometry.
+      \textbf{Q5b}~\cite{Beau2026q5b} delivers three results: a structural one, the Carnot
+      convergence, and two conditional ones, the metric extraction and the signature.
 
       \textit{Carnot convergence} (Theorem~3.2; structural).
       The BFS shell stratification $\{S_n\}$ of $G_q = \Heis_3(\mathbb{Z}/q\mathbb{Z})$
@@ -595,8 +601,9 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
       dimension $\dim_{\mathbb{R}} \Im\mathbb{H} = \dim_{\mathbb{R}} \su(2) = 3$ of that
       carrier (O23, Theorem~3.1); the reading of these three directions as spatial is itself
       a bridge under construction in this branch, not an algebraic fact.
-      These are the inputs to Q7's identification of $H_{\mathrm{eff}} = \Sym^2(V_\rho)$ as
-      the effective projection space, which inherits their supplied status.
+      Q7 takes the identification of the effective projection space with $\Sym^2(V_\rho)$ as the
+      supplied hypothesis [ID]; these inputs do not derive it (O29 identifies no such
+      structure).
 
       \item \textbf{O-series universality data.}
       The stabilisation of $\delta_{\mathrm{pair}}(q)$ across the O12--O25 campaign provides
@@ -624,7 +631,7 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         \midrule
         $\geff \propto \eta^{\mu\nu}$$^{\ast}$, scale free & Gravity, Q12, Q13 & P$_{\mathrm{s}}$ (Q11) \\
         Signature $(-, +, +)$ of the non-degenerate block & All Branch~III & C$^{\ddagger}$ (Q5b) \\
-        $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ & Q6b, Gravity, Q12 & C \\
+        $\Leff$ on $\mathbb{R}_\tau \times \Heis_3(\mathbb{R})$ (temporal term supplied, signs stipulated) & Q6b, Gravity, Q12 & C$^{\dagger}$ \\
         $H_{\mathrm{eff}} = \Sym^2(V_\rho) \cong \mathbb{C}^3$ (under [ID]) & Q7, Q8, Q14 & P$_{\mathrm{s}}$ \\
         Three spatial directions from $\Im\mathbb{H}$ & Q7, gauge notes & O (Q7 Conj.~4.7) \\
         Schwarzschild exterior metric & Q6b & C$^{\ddagger\ast}$ \\
@@ -758,7 +765,7 @@ equations; those primary sources are Q5b and the Gravity paper respectively.
         \item \textit{Spatial limit hypothesis [H-L]} (Q5a 3.0, Q5b 2.0).
         The existence of a spatial second-order limit operator $\Lpi = -A\partial_x^2$ on
         $L^2(\mathbb{R})$ is not established: Q5a version 3.0 proves that the published
-        normalisation yields the zero form and, under the unproved hypotheses [H-depth] and
+        normalisation yields the zero form, assuming uniformly bounded weights, and, under the unproved hypotheses [H-depth] and
         [H-$w'$] (Q5a Theorem~6.1), that no common scalar normalisation yields a non-trivial
         toric differential operator.
         The only identified potential source is the conditional dual-window regime, requiring

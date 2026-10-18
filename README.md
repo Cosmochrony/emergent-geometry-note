@@ -21,7 +21,8 @@ automorphism group.
 
 **Status revision (version 1.1).** Q5a version 3.0 withdraws the first link of the chain
 (the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
-growing toric Fourier window, the published form converges to the zero form, and, under the
+growing toric Fourier window, the published form converges to the zero form (assuming uniformly
+bounded weights, which is numerically supported but not proved), and, under the
 unproved, numerically supported hypotheses [H-depth] (diverging saturation depth) and [H-$w'$]
 (positive finite weight limits) of Q5a Theorem 6.1, no common scalar normalisation produces a
 non-trivial toric differential operator. The spatial limit
@@ -66,8 +67,11 @@ Five conceptually distinct stages, each resolved by a distinct group of papers:
    Q5a-O2 establishes the pipeline's pure-Fourier structure and truncation status, leaving
    [H-E1] and [C] open).
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
-   homogeneous dimension $D_{\mathrm{hom}} = 4$ promote $L_\Pi$ to a 4D operator $L_{\mathrm{eff}}$
-   on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ (Q5b).
+   homogeneous dimension $D_{\mathrm{hom}} = 4$ give the spatial limit the homogeneous geometry of a
+   four-dimensional space (Q5b, structural). The 4D operator
+   $L_{\mathrm{eff}} = -A_\tau\partial_\tau^2 + A_H\Delta_H$ on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$
+   does not follow from them: Q5b poses it under [H-L] and [H-lift], with a supplied temporal term and
+   stipulated signs.
 3. **Metric extraction** — a rank-three effective co-metric $g^{\mu\nu} \propto A_{\mu\nu}$, with empty
    central slot, from the principal symbol of $L_{\mathrm{eff}}$, and signature $(-,+,+)$ on its non-degenerate
    block; the signs are stipulated, and [H-hyp$_{\mathrm{red}}$] makes them the only ones compatible with a
