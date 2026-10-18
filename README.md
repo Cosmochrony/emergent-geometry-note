@@ -19,13 +19,15 @@ automorphism group.
 > What effective geometry is selected in the large-$q$ limit of this structure, and what
 > determines the numerical values of its metric coefficients?
 
+**Status revision (version 2.1).** Version 2.1 aligns the statements taken from Q6b with its version 2.0: a
+leading Newtonian exterior for a supplied spherically symmetric, asymptotically flat and asymptotically homogeneous
+extension, a Schwarzschild form only with exterior homogeneity and external dynamical input, and a conditional
+relation to the Einstein equations.
+
 **Status revision (version 2.0).** Version 2.0 corrects the status of the downstream results:
 the lifting hypothesis [H-lift] is open, the signature result concerns the non-degenerate block of a
 rank-three co-metric, no metric coefficient value is established, and the Heisenberg carrier is
-supplied rather than selected; withdrawn attributions are listed in the note's Section 7.5. Version 2.1 aligns
-the statements taken from Q6b with its version 2.0: a Newtonian exterior for a supplied asymptotically flat
-extension, a Schwarzschild form only with external dynamical input, and a conditional relation to the Einstein
-equations. As
+supplied rather than selected; withdrawn attributions are listed in the note's Section 7.5. As
 recorded since version 1.1, Q5a version 3.0 withdraws the first link of the chain
 (the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
 growing toric Fourier window, the published form converges to the zero form (assuming uniformly
@@ -43,8 +45,8 @@ inputs that are not supplied.
 The sub-programme aims to remove the postulate of a background spacetime by reconstructing the
 effective metric from admissibility rather than postulating it; the reconstruction is at present
 conditional and incomplete (a rank-three co-metric, with the rank-four extension open as Q5b-O2). This note concerns the **reconstruction**
-of the metric only; its dynamics (the Einstein equations) belong to the spectral gravity
-sub-programme.
+of the metric only; whether, and under which inputs, it satisfies the Einstein equations belongs to the spectral
+gravity sub-programme.
 
 ## Logical Chain
 
@@ -129,7 +131,7 @@ The note maps **twelve** constituent papers, organised by internal phase:
 | Metric extraction | Q5b | rank-3 $g^{\mu\nu} \propto A_{\mu\nu}$; block $(-,+,+)$ | C$^\dagger$/C$^\ddagger$ |
 | Coefficient determination | Q7, Q8, Q10, U1 | $A_H = A_Z = 2\lambda$, $\lambda$ free | P$_{\mathrm{s}}$ |
 | Metric closure | Q11 | $A_\tau$ free; $g^{\mu\nu} \propto \eta^{\mu\nu}$$^\ast$ | P$_{\mathrm{s}}$ |
-| Integrative output | Q6b | conditional chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$; Newtonian exterior$^\S$ | C$^{\ddagger\ast}$ |
+| Integrative output | Q6b | conditional chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$; Newtonian exterior | C$^{\ddagger\ast\S}$ |
 
 Status codes: **P** = proved, **S** = structural, **C** = conditional on the unestablished
 spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0); **C$^\dagger$** = conditional on [H-L] and on the
@@ -138,8 +140,9 @@ hypothesis [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem 6.
 co-metric, C$^\ddagger$ for the signature; **$^\ast$** = additionally presupposes a supplied rank-four extension
 of the co-metric (Q5b-O2, open); $g^{\mu\nu} \propto \eta^{\mu\nu}$ further requires the hypotheses of Q11
 Corollary 6.1 and a rescaling of $\tau$, and its overall scale is free; **$^\S$** = the extension must moreover be
-spherically symmetric and asymptotically flat, and the Schwarzschild form needs external dynamical input (Q6b
-Proposition 3.2); **$^\diamond$** = the normalisation no-go of
+spherically symmetric and asymptotically flat, which Q5b does not supply, the Newtonian profile holds at leading order
+for an asymptotically homogeneous exterior, and the Schwarzschild form needs exterior homogeneity and external
+dynamical input (Q6b Proposition 3.2); **$^\diamond$** = the normalisation no-go of
 Q5a Theorem 6.1, conditional on [H-depth] and [H-$w'$];
 **P$_{\mathrm{s}}$** = proved only under supplied inputs, with no coefficient value derived.
 
