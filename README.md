@@ -8,10 +8,13 @@ or open, and states the remaining open deliverables.
 
 ## Central Question
 
-The admissibility filter $\Pi_q$ acts on the Weil representation
-$V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ of the Heisenberg group
-$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$, selecting admissible modes under the Born--Infeld
-bounded-flux constraint.
+The admissibility filter $\Pi_q$ acts on a supplied Heisenberg carrier, the
+Heisenberg--Schrödinger representation $\pi_c$ of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ on
+$\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})$, selecting admissible modes under the Born--Infeld
+bounded-flux constraint. The carrier is not selected by the admissibility axioms (an explicit
+$\mathfrak{S}_3$ countermodel, HeisenbergStructure); identifying the admissible fibre with it is a
+modelling dictionary, and its associated Weil action is a further representation of the symplectic
+automorphism group.
 
 > What effective geometry is selected in the large-$q$ limit of this structure, and what
 > determines the numerical values of its metric coefficients?
@@ -37,7 +40,7 @@ sub-programme.
 
 $\Pi_q
 \;\Longrightarrow\;
-V_\rho \simeq L^2(\mathbb{Z}/q\mathbb{Z})
+\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})
 \;\Longrightarrow\;
 \mathrm{Heis}_3(\mathbb{R})
 \;\Longrightarrow\;
@@ -88,13 +91,19 @@ coefficient to 2 is a choice of units (Q8, Q11).
 ## Position in the Programme
 
 The sub-programme sits at the interface between Branch I (axiomatic primitive) and Branch III
-(physical observables). It takes from Branch I the Weil representation of
-$\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and the Born--Infeld admissibility constraint, and from
+(physical observables). It takes from Branch I the Born--Infeld admissibility constraint and, as
+a supplied input, the Heisenberg carrier $\mathcal{H}_c$ of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$,
+and from
 Presentation Note 1 (spectral admissibility) the supplied inputs that the admissible sector is
 carried by the spin-$\tfrac12$ carrier $V_\rho \cong \mathbb{C}^2$ and that $\Sigma_c(n_3) = 3$
 (a supplied selection rule, with $\mathrm{Im}\,\mathbb{H} \cong \mathfrak{su}(2)$ the adjoint
 dimension of that carrier). It aims to produce the effective Lorentzian metric used
 throughout Branch III; it currently yields, conditionally, a rank-three co-metric.
+
+*Notation.* Here $\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})$ is the $q$-dimensional supplied
+Heisenberg carrier and $V_\rho \cong \mathbb{C}^2$ the supplied spin-$\tfrac12$ carrier, so that
+$\mathrm{Sym}^2(V_\rho) \cong \mathbb{C}^3$. The convention is local to this note and establishes no
+derived relation between the two carriers; companion papers use $V_\rho$ differently.
 
 ## Constituent Papers
 
