@@ -140,8 +140,8 @@ hypothesis [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem 6.
 co-metric, C$^\ddagger$ for the signature; **$^\ast$** = additionally presupposes a supplied rank-four extension
 of the co-metric (Q5b-O2, open); $g^{\mu\nu} \propto \eta^{\mu\nu}$ further requires the hypotheses of Q11
 Corollary 6.1 and a rescaling of $\tau$, and its overall scale is free; **$^\S$** = the extension must moreover be
-spherically symmetric and asymptotically flat, which Q5b does not supply, the Newtonian profile holds at leading order
-for an asymptotically homogeneous exterior, and the Schwarzschild form needs exterior homogeneity and external
+spherically symmetric and asymptotically flat, which Q5b does not supply; the Newtonian profile holds at leading order
+for an asymptotically homogeneous exterior; and the Schwarzschild form needs exterior homogeneity and external
 dynamical input (Q6b Proposition 3.2); **$^\diamond$** = the normalisation no-go of
 Q5a Theorem 6.1, conditional on [H-depth] and [H-$w'$];
 **P$_{\mathrm{s}}$** = proved only under supplied inputs, with no coefficient value derived.
