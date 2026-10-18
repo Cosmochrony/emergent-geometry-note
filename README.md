@@ -19,7 +19,11 @@ automorphism group.
 > What effective geometry is selected in the large-$q$ limit of this structure, and what
 > determines the numerical values of its metric coefficients?
 
-**Status revision (version 1.1).** Q5a version 3.0 withdraws the first link of the chain
+**Status revision (version 2.0).** Version 2.0 corrects the status of the downstream results:
+the lifting hypothesis [H-lift] is open, the signature result concerns the non-degenerate block of a
+rank-three co-metric, no metric coefficient value is established, and the Heisenberg carrier is
+supplied rather than selected; withdrawn attributions are listed in the note's Section 7.5. As
+recorded since version 1.1, Q5a version 3.0 withdraws the first link of the chain
 (the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
 growing toric Fourier window, the published form converges to the zero form (assuming uniformly
 bounded weights, which is numerically supported but not proved), and, under the
