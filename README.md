@@ -121,7 +121,7 @@ The note maps **twelve** constituent papers, organised by internal phase:
 
 | Phase | Papers | Central output | Status |
 |---|---|---|---|
-| Discrete-to-continuum | Q5a, Q5a-O2, H2 | Fourier window; no-go; $L_\Pi \to$ [H-L] | C |
+| Discrete-to-continuum | Q5a, Q5a-O2, H2 | Fourier window; no-go$^\diamond$; $L_\Pi \to$ [H-L] | C |
 | Dimensional promotion | Q5b | $D_{\mathrm{hom}} = 4$; Carnot convergence | S |
 | Metric extraction | Q5b | rank-3 $g^{\mu\nu} \propto A_{\mu\nu}$; block $(-,+,+)$ | C$^\dagger$/C$^\ddagger$ |
 | Coefficient determination | Q7, Q8, Q10, U1 | $A_H = A_Z = 2\lambda$, $\lambda$ free | P$_{\mathrm{s}}$ |
@@ -133,8 +133,9 @@ spatial limit hypothesis [H-L] (Q5a 3.0, Q5b 2.0); **C$^\dagger$** = conditional
 open lifting hypothesis [H-lift] (Q5b 2.2.1, Hypothesis 4.1); **C$^\ddagger$** adds the hyperbolicity
 hypothesis [H-hyp$_{\mathrm{red}}$] to [H-L] and [H-lift] (Q5b 2.2.1, Theorem 6.1); **C$^\dagger$/C$^\ddagger$** = C$^\dagger$ for the
 co-metric, C$^\ddagger$ for the signature; **$^\ast$** = additionally presupposes a supplied rank-four extension
-of the co-metric (Q5b-O2, open); $g^{\mu\nu} \propto \eta^{\mu\nu}$ further requires the invariance hypotheses
-of Q11 Corollary 6.1, and its overall scale is free;
+of the co-metric (Q5b-O2, open); $g^{\mu\nu} \propto \eta^{\mu\nu}$ further requires the hypotheses of Q11
+Corollary 6.1 and a rescaling of $\tau$, and its overall scale is free; **$^\diamond$** = the normalisation no-go of
+Q5a Theorem 6.1, conditional on [H-depth] and [H-$w'$];
 **P$_{\mathrm{s}}$** = proved only under supplied inputs, with no coefficient value derived.
 
 ## Open Deliverables
