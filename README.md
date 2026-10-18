@@ -21,8 +21,10 @@ automorphism group.
 
 **Status revision (version 1.1).** Q5a version 3.0 withdraws the first link of the chain
 (the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
-growing toric Fourier window, the published form converges to the zero form, and no common
-scalar normalisation produces a non-trivial toric differential operator. The spatial limit
+growing toric Fourier window, the published form converges to the zero form, and, under the
+unproved, numerically supported hypotheses [H-depth] (diverging saturation depth) and [H-$w'$]
+(positive finite weight limits) of Q5a Theorem 6.1, no common scalar normalisation produces a
+non-trivial toric differential operator. The spatial limit
 operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0), every metric
 result is conditional on it, and Q5 is open. The geometric convergence results (Carnot,
 $D_{\mathrm{hom}}=4$) are independent of [H-L]. No metric coefficient value is established:
