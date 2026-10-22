@@ -19,28 +19,23 @@ automorphism group.
 > What effective geometry is selected in the large-$q$ limit of this structure, and what
 > determines the numerical values of its metric coefficients?
 
-**Status revision (version 2.1).** Version 2.1 aligns the statements taken from Q6b with its version 2.0: a
-leading Newtonian exterior for a supplied spherically symmetric, asymptotically flat and asymptotically homogeneous
-extension, a Schwarzschild form only with exterior homogeneity and external dynamical input, and a conditional
-relation to the Einstein equations.
-
-**Status revision (version 2.0).** Version 2.0 corrects the status of the downstream results:
-the lifting hypothesis [H-lift] is open, the signature result concerns the non-degenerate block of a
-rank-three co-metric, no metric coefficient value is established, and the Heisenberg carrier is
-supplied rather than selected; withdrawn attributions are listed in the note's Section 7.5. As
-recorded since version 1.1, Q5a version 3.0 withdraws the first link of the chain
-(the Mosco derivation of $L_\Pi = -A\partial_x^2$): the canonical filtration is exactly a
-growing toric Fourier window, the published form converges to the zero form (assuming uniformly
-bounded weights, which is numerically supported but not proved), and, under the
-unproved, numerically supported hypotheses [H-depth] (diverging saturation depth) and [H-$w'$]
-(positive finite weight limits) of Q5a Theorem 6.1, no common scalar normalisation produces a
-non-trivial toric differential operator. The spatial limit
-operator is now the explicit, unestablished hypothesis **[H-L]** (Q5b 2.0), every metric
-result is conditional on it, and Q5 is open. The geometric convergence results (Carnot,
-$D_{\mathrm{hom}}=4$) are independent of [H-L]. No metric coefficient value is established:
-invariance fixes the shape of an invariant spatial form and leaves its scale free (Q8), leaves the
-temporal coefficient independent of the spatial one (Q11), and the isotropy route of Q10 rests on
-inputs that are not supplied.
+**Status.** The downstream results have the following status: the lifting hypothesis [H-lift] is open, the
+signature result concerns the non-degenerate block of a rank-three co-metric, no metric coefficient value is
+established, and the Heisenberg carrier is supplied rather than selected; attributions that the current sources do
+not support are listed in the note's Section 7.5. Q5a does not supply the first link of the chain: the canonical
+filtration is exactly a growing toric Fourier window, the published form converges to the zero form (assuming
+uniformly bounded weights, which is numerically supported but not proved), and, under the unproved, numerically
+supported hypotheses [H-depth] (diverging saturation depth) and [H-$w'$] (positive finite weight limits) of Q5a
+Theorem 6.1, no common scalar normalisation produces a non-trivial toric differential operator. The spatial limit
+operator is the explicit, unestablished hypothesis **[H-L]** (Q5b), every metric result is conditional on it, and
+Q5 is open. The geometric convergence results (Carnot, $D_{\mathrm{hom}}=4$) are independent of [H-L]. No metric
+coefficient value is established: invariance fixes the shape of an invariant spatial form and leaves its scale free
+(Q8), leaves the temporal coefficient independent of the spatial one (Q11), and the isotropy route of Q10 rests on
+inputs that are not supplied. The statements taken from Q6b are a leading Newtonian exterior for a supplied
+spherically symmetric, asymptotically flat and asymptotically homogeneous extension, a Schwarzschild form only with
+exterior homogeneity and external dynamical input, and a conditional relation to the Einstein equations. The
+spectral gravity sub-programme (Note 4) works on a supplied Riemannian metric, whose reading as the effective
+metric of this note is conditional.
 
 The sub-programme aims to remove the postulate of a background spacetime by reconstructing the
 effective metric from admissibility rather than postulating it; the reconstruction is at present
@@ -71,8 +66,8 @@ and no rescaling of $\tau$ makes it proportional to $\eta^{\mu\nu}$.
 
 Five conceptually distinct stages, each resolved by a distinct group of papers:
 
-1. **Discrete-to-continuum** — now the open hypothesis [H-L]: Q5a 3.0 withdraws the Mosco
-   derivation of $L_\Pi = -A\partial_x^2$ (H2 closed hypothesis [H2] of the withdrawn framework;
+1. **Discrete-to-continuum** — the open hypothesis [H-L]: Q5a supplies no Mosco
+   derivation of $L_\Pi = -A\partial_x^2$ (H2 closes hypothesis [H2] of a framework that Q5a does not support;
    Q5a-O2 establishes the pipeline's pure-Fourier structure and truncation status, leaving
    [H-E1] and [C] open).
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
