@@ -81,7 +81,7 @@ Five conceptually distinct stages, each resolved by a distinct group of papers:
    block; the signs are stipulated, and [H-hyp$_{\mathrm{red}}$] makes them the only ones compatible with a
    $\tau$-ordered finite characteristic cone. A diagonal extension with $A_z > 0$ would have signature
    $(-,+,+,+)$; constructing it is the open problem Q5b-O2 (Q5b; co-metric conditional on [H-L] and the open lifting
-   hypothesis [H-lift], signature additionally on [H-hyp$_{\mathrm{red}}$]; Q9 version 2.0 gives sufficient conditions for a kinetic Mosco limit and does not
+   hypothesis [H-lift], signature additionally on [H-hyp$_{\mathrm{red}}$]; Q9 gives sufficient conditions for a kinetic Mosco limit and does not
    discharge [H-lift]).
 4. **Coefficient determination** — no coefficient value is derived. Under the supplied
    identification [ID] and action [ACT], an equivariant bridge is zero or an isomorphism, unique up
