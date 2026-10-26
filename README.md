@@ -67,7 +67,7 @@ and no rescaling of $\tau$ makes it proportional to $\eta^{\mu\nu}$.
 Five conceptually distinct stages, each resolved by a distinct group of papers:
 
 1. **Discrete-to-continuum** — the open hypothesis [H-L]: Q5a supplies no Mosco
-   derivation of $L_\Pi = -A\partial_x^2$ (H2 closes hypothesis [H2] of a framework that Q5a does not support;
+   derivation of $L_\Pi = -A\partial_x^2$ (H2 proves the statement formulated as hypothesis [H2] in Q5a version 2.0, a framework that the current Q5a does not support;
    Q5a-O2 establishes the pipeline's pure-Fourier structure and truncation status, leaving
    [H-E1] and [C] open).
 2. **Dimensional promotion** — the Carnot convergence of BFS shells and the Bass--Guivarc'h
